@@ -8,7 +8,14 @@
 
 import SwiftUI
 
+
+
 struct ContentView: View {
+    
+    init() {
+        UITabBar.appearance().barTintColor = UIColor.black
+    }
+        
     @State private var selection = 0
  
     // youtube.com/watch?v=e7t3Dor9oxI - working with tabview
@@ -32,10 +39,14 @@ struct ContentView: View {
                     }
                 }
                 .tag(1)
+        
         }
         .accentColor(.green)
+    
     }
 }
+
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
