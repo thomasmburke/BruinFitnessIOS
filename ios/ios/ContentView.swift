@@ -11,13 +11,14 @@ import SwiftUI
 struct ContentView: View {
     @State private var selection = 0
  
+    // youtube.com/watch?v=e7t3Dor9oxI - working with tabview
     var body: some View {
         TabView(selection: $selection){
             Text("First View")
                 .font(.title)
                 .tabItem {
                     VStack {
-                        Image("first")
+                        Image("baseline_fitness_center_white_24pt")
                         Text("Programming")
                     }
                 }
@@ -26,12 +27,13 @@ struct ContentView: View {
                 .font(.title)
                 .tabItem {
                     VStack {
-                        Image(systemName: "clock")
+                        Image("baseline_schedule_white_24pt")
                         Text("Schedule")
                     }
                 }
                 .tag(1)
         }
+        .accentColor(.green)
     }
 }
 
