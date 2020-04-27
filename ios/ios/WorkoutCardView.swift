@@ -10,7 +10,24 @@ import SwiftUI
 
 struct WorkoutCardView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        // Container to add background and corner radius to
+        VStack {
+            HStack {
+                VStack(alignment: .leading) {
+                    Text("CrossFit")
+                        .font(.title)
+                        .foregroundColor(Color.white.opacity(0.87))
+                        .bold()
+                    Text("Functional fitness")
+                        .font(.subheadline)
+                        .foregroundColor(Color.white.opacity(0.60))
+                }
+                Spacer()
+            }.padding()
+        }
+        .background(Color.black)
+        .cornerRadius(10)
+        .shadow(radius: 5)
     }
 }
 
