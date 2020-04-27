@@ -25,11 +25,19 @@ struct WorkoutCardView: View {
                 Spacer()
             }.padding()
         }
-        .background(Color.black)
-        .cornerRadius(10)
+        .background(Color("workoutCardColor"))
+        .cornerRadius(20)
         .shadow(radius: 5)
+        // Card border
+        .overlay(
+            RoundedRectangle(cornerRadius: 20)
+                .stroke(Color("workoutCardBorderColor"), lineWidth: 4)
+        )
+        .padding()
     }
 }
+
+
 
 struct WorkoutCardView_Previews: PreviewProvider {
     static var previews: some View {
