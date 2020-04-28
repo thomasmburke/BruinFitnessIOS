@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		434B1B53245682D000B351E4 /* WorkoutCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B52245682D000B351E4 /* WorkoutCardView.swift */; };
+		434B1B592457EBB900B351E4 /* HorizontalCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B582457EBB900B351E4 /* HorizontalCalendarView.swift */; };
+		434B1B5D2457FA4E00B351E4 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B5C2457FA4E00B351E4 /* Workout.swift */; };
 		43797FF52453E67C00B23CCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43797FF42453E67C00B23CCF /* AppDelegate.swift */; };
 		43797FF72453E67C00B23CCF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43797FF62453E67C00B23CCF /* SceneDelegate.swift */; };
 		43797FF92453E67C00B23CCF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43797FF82453E67C00B23CCF /* ContentView.swift */; };
@@ -18,6 +20,8 @@
 
 /* Begin PBXFileReference section */
 		434B1B52245682D000B351E4 /* WorkoutCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCardView.swift; sourceTree = "<group>"; };
+		434B1B582457EBB900B351E4 /* HorizontalCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalCalendarView.swift; sourceTree = "<group>"; };
+		434B1B5C2457FA4E00B351E4 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
 		43797FF12453E67C00B23CCF /* ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43797FF42453E67C00B23CCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43797FF62453E67C00B23CCF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +43,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		434B1B5A2457EBCF00B351E4 /* Programming */ = {
+			isa = PBXGroup;
+			children = (
+				434B1B582457EBB900B351E4 /* HorizontalCalendarView.swift */,
+				434B1B52245682D000B351E4 /* WorkoutCardView.swift */,
+			);
+			path = Programming;
+			sourceTree = "<group>";
+		};
+		434B1B5B2457FA1000B351E4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				434B1B5C2457FA4E00B351E4 /* Workout.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		43797FE82453E67C00B23CCF = {
 			isa = PBXGroup;
 			children = (
@@ -58,10 +79,11 @@
 		43797FF32453E67C00B23CCF /* ios */ = {
 			isa = PBXGroup;
 			children = (
+				434B1B5B2457FA1000B351E4 /* Models */,
+				434B1B5A2457EBCF00B351E4 /* Programming */,
 				43797FF42453E67C00B23CCF /* AppDelegate.swift */,
 				43797FF62453E67C00B23CCF /* SceneDelegate.swift */,
 				43797FF82453E67C00B23CCF /* ContentView.swift */,
-				434B1B52245682D000B351E4 /* WorkoutCardView.swift */,
 				43797FFA2453E68400B23CCF /* Assets.xcassets */,
 				43797FFF2453E68400B23CCF /* LaunchScreen.storyboard */,
 				437980022453E68400B23CCF /* Info.plist */,
@@ -150,9 +172,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				434B1B53245682D000B351E4 /* WorkoutCardView.swift in Sources */,
+				434B1B592457EBB900B351E4 /* HorizontalCalendarView.swift in Sources */,
 				43797FF52453E67C00B23CCF /* AppDelegate.swift in Sources */,
 				43797FF72453E67C00B23CCF /* SceneDelegate.swift in Sources */,
 				43797FF92453E67C00B23CCF /* ContentView.swift in Sources */,
+				434B1B5D2457FA4E00B351E4 /* Workout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
