@@ -10,6 +10,10 @@
 		434B1B53245682D000B351E4 /* WorkoutCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B52245682D000B351E4 /* WorkoutCardView.swift */; };
 		434B1B592457EBB900B351E4 /* HorizontalCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B582457EBB900B351E4 /* HorizontalCalendarView.swift */; };
 		434B1B5D2457FA4E00B351E4 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B5C2457FA4E00B351E4 /* Workout.swift */; };
+		434B1B602457FF4500B351E4 /* workoutData.json in Resources */ = {isa = PBXBuildFile; fileRef = 434B1B5F2457FF4500B351E4 /* workoutData.json */; };
+		434B1B622458000700B351E4 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B612458000700B351E4 /* Data.swift */; };
+		434B1B642458008400B351E4 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B632458008400B351E4 /* UserData.swift */; };
+		434B1B662458014B00B351E4 /* WorkoutCardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B652458014B00B351E4 /* WorkoutCardList.swift */; };
 		43797FF52453E67C00B23CCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43797FF42453E67C00B23CCF /* AppDelegate.swift */; };
 		43797FF72453E67C00B23CCF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43797FF62453E67C00B23CCF /* SceneDelegate.swift */; };
 		43797FF92453E67C00B23CCF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43797FF82453E67C00B23CCF /* ContentView.swift */; };
@@ -22,6 +26,10 @@
 		434B1B52245682D000B351E4 /* WorkoutCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCardView.swift; sourceTree = "<group>"; };
 		434B1B582457EBB900B351E4 /* HorizontalCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalCalendarView.swift; sourceTree = "<group>"; };
 		434B1B5C2457FA4E00B351E4 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		434B1B5F2457FF4500B351E4 /* workoutData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = workoutData.json; path = /Users/tburke/Desktop/repos/BruinFitnessIOS/ios/ios/Resources/../../../../../workoutData.json; sourceTree = "<absolute>"; };
+		434B1B612458000700B351E4 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		434B1B632458008400B351E4 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		434B1B652458014B00B351E4 /* WorkoutCardList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCardList.swift; sourceTree = "<group>"; };
 		43797FF12453E67C00B23CCF /* ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43797FF42453E67C00B23CCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43797FF62453E67C00B23CCF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,21 +51,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		434B1B5A2457EBCF00B351E4 /* Programming */ = {
+		434B1B5A2457EBCF00B351E4 /* ProgrammingViews */ = {
 			isa = PBXGroup;
 			children = (
 				434B1B582457EBB900B351E4 /* HorizontalCalendarView.swift */,
 				434B1B52245682D000B351E4 /* WorkoutCardView.swift */,
+				434B1B652458014B00B351E4 /* WorkoutCardList.swift */,
 			);
-			path = Programming;
+			path = ProgrammingViews;
 			sourceTree = "<group>";
 		};
 		434B1B5B2457FA1000B351E4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				434B1B5C2457FA4E00B351E4 /* Workout.swift */,
+				434B1B612458000700B351E4 /* Data.swift */,
+				434B1B632458008400B351E4 /* UserData.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		434B1B5E2457FF0F00B351E4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				434B1B5F2457FF4500B351E4 /* workoutData.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		43797FE82453E67C00B23CCF = {
@@ -79,8 +98,9 @@
 		43797FF32453E67C00B23CCF /* ios */ = {
 			isa = PBXGroup;
 			children = (
+				434B1B5E2457FF0F00B351E4 /* Resources */,
 				434B1B5B2457FA1000B351E4 /* Models */,
-				434B1B5A2457EBCF00B351E4 /* Programming */,
+				434B1B5A2457EBCF00B351E4 /* ProgrammingViews */,
 				43797FF42453E67C00B23CCF /* AppDelegate.swift */,
 				43797FF62453E67C00B23CCF /* SceneDelegate.swift */,
 				43797FF82453E67C00B23CCF /* ContentView.swift */,
@@ -159,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				437980012453E68400B23CCF /* LaunchScreen.storyboard in Resources */,
+				434B1B602457FF4500B351E4 /* workoutData.json in Resources */,
 				43797FFE2453E68400B23CCF /* Preview Assets.xcassets in Resources */,
 				43797FFB2453E68400B23CCF /* Assets.xcassets in Resources */,
 			);
@@ -171,11 +192,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				434B1B622458000700B351E4 /* Data.swift in Sources */,
 				434B1B53245682D000B351E4 /* WorkoutCardView.swift in Sources */,
+				434B1B642458008400B351E4 /* UserData.swift in Sources */,
 				434B1B592457EBB900B351E4 /* HorizontalCalendarView.swift in Sources */,
 				43797FF52453E67C00B23CCF /* AppDelegate.swift in Sources */,
 				43797FF72453E67C00B23CCF /* SceneDelegate.swift in Sources */,
 				43797FF92453E67C00B23CCF /* ContentView.swift in Sources */,
+				434B1B662458014B00B351E4 /* WorkoutCardList.swift in Sources */,
 				434B1B5D2457FA4E00B351E4 /* Workout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

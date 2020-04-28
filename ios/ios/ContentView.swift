@@ -17,6 +17,7 @@ struct ContentView: View {
     }
         
     @State private var selection = 0
+    @EnvironmentObject var userData: UserData
  
     // youtube.com/watch?v=e7t3Dor9oxI - working with tabview
     var body: some View {
@@ -30,7 +31,8 @@ struct ContentView: View {
                     }
                 }
                 .tag(0)
-            WorkoutCardView()
+            //WorkoutCardView()
+                Text("Second View")
                 .tabItem {
                     VStack {
                         Image("baseline_schedule_white_24pt")
