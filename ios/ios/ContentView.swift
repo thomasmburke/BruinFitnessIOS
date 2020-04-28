@@ -30,8 +30,7 @@ struct ContentView: View {
                     }
                 }
                 .tag(0)
-            Text("Second View")
-                .font(.title)
+            WorkoutCardView()
                 .tabItem {
                     VStack {
                         Image("baseline_schedule_white_24pt")

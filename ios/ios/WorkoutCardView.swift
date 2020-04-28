@@ -13,18 +13,21 @@ struct WorkoutCardView: View {
     @State private var showDetail = false
     
     var body: some View {
-        // Container to add background and corner radius to
-        //VStack {
+        // Vertical stack for total (expanded) card
+        VStack {
+            // Horizontal stack for unexpanded card
             HStack {
+                // Vertical stack for unexpanded card
                 VStack(alignment: .leading) {
                     Text("CrossFit")
                         .font(.title)
-                        .foregroundColor(Color.white.opacity(0.87))
+                        .foregroundColor(Color.white)
                         .bold()
                     Text("Functional fitness")
                         .font(.subheadline)
                         .foregroundColor(Color.white.opacity(0.60))
                 }
+                
                 Spacer()
                 
                 Button(action: {
@@ -39,9 +42,26 @@ struct WorkoutCardView: View {
                         .scaleEffect(showDetail ? 1.5 : 1.2)
                         .padding()
                 }
-                
-            }.padding()
-        //}
+            }
+            // inner card padding
+            .padding()
+            
+            if showDetail {
+                // expanded portion horizontal stack to ensure text is left aligned
+                HStack{
+                    // Vstack for body text of expanded card portion
+                    VStack{
+                Text("Workout description\n\n yyy")
+                    .font(.body)
+                    .foregroundColor(Color.white.opacity(0.87))
+                    // padding top comes from the bottom padding of non expanded card
+                    .padding([.leading, .bottom, .trailing])
+                    }
+                    
+                    Spacer()
+                }
+            }
+        }
         .background(Color("workoutCardColor"))
         .cornerRadius(20)
         .shadow(radius: 5)
@@ -50,6 +70,7 @@ struct WorkoutCardView: View {
             RoundedRectangle(cornerRadius: 20)
                 .stroke(Color("workoutCardBorderColor"), lineWidth: 4)
         )
+        // outer card padding, so card doesn't touch edges of the screen
         .padding()
     }
 }
