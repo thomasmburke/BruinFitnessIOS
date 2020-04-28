@@ -11,6 +11,7 @@ import SwiftUI
 struct WorkoutCardView: View {
     
     @State private var showDetail = false
+    var workout: Workout
     
     var body: some View {
         // Vertical stack for total (expanded) card
@@ -19,11 +20,11 @@ struct WorkoutCardView: View {
             HStack {
                 // Vertical stack for unexpanded card
                 VStack(alignment: .leading) {
-                    Text("CrossFit")
+                    Text(workout.workoutType)
                         .font(.title)
                         .foregroundColor(Color.white)
                         .bold()
-                    Text("Functional fitness")
+                    Text(workout.goal)
                         .font(.subheadline)
                         .foregroundColor(Color.white.opacity(0.60))
                 }
@@ -51,11 +52,11 @@ struct WorkoutCardView: View {
                 HStack{
                     // Vstack for body text of expanded card portion
                     VStack{
-                Text("Workout description\n\n yyy")
-                    .font(.body)
-                    .foregroundColor(Color.white.opacity(0.87))
-                    // padding top comes from the bottom padding of non expanded card
-                    .padding([.leading, .bottom, .trailing])
+                        Text(workout.description)
+                        .font(.body)
+                        .foregroundColor(Color.white.opacity(0.87))
+                        // padding top comes from the bottom padding of non expanded card
+                        .padding([.leading, .bottom, .trailing])
                     }
                     
                     Spacer()
@@ -79,6 +80,6 @@ struct WorkoutCardView: View {
 
 struct WorkoutCardView_Previews: PreviewProvider {
     static var previews: some View {
-        WorkoutCardView()
+        WorkoutCardView(workout: workoutData[0])
     }
 }
