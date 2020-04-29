@@ -31,8 +31,7 @@ struct ContentView: View {
                     }
                 }
                 .tag(0)
-            //WorkoutCardView()
-                Text("Second View")
+            WorkoutCardList()
                 .tabItem {
                     VStack {
                         Image("baseline_schedule_white_24pt")
@@ -51,6 +50,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().environmentObject(UserData())
     }
 }

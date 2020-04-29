@@ -74,6 +74,16 @@ struct WorkoutCardView: View {
         // outer card padding, so card doesn't touch edges of the screen
         .padding()
     }
+    
+    func subView() -> some View {
+        Group {
+            if showDetail {
+                Text("test2")
+            } else {
+                Text("test")
+            }
+        }
+    }
 }
 
 
