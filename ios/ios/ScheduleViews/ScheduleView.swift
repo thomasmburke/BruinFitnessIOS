@@ -9,6 +9,9 @@
 import SwiftUI
 
 struct ScheduleView: View {
+    
+    @EnvironmentObject var userData: UserData
+    
     var body: some View {
         VStack{
             
@@ -29,7 +32,7 @@ struct ScheduleView: View {
             // Using Custom Divider to get horizontal padding
             CustomDivider()
             
-            Spacer()
+            ScheduleListView()
         }
         .background(Color("bruinBackgroundColor"))
     }
@@ -37,6 +40,6 @@ struct ScheduleView: View {
 
 struct ScheduleView_Previews: PreviewProvider {
     static var previews: some View {
-        ScheduleView()
+        ScheduleView().environmentObject(UserData())
     }
 }
