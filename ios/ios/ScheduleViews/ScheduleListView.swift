@@ -9,13 +9,22 @@
 import SwiftUI
 
 struct ScheduleListView: View {
+    
+    @EnvironmentObject private var userData: UserData
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List{
+            ForEach(userData.schedules) { schedule in
+                ForEach(schedule.scheduleTimes, id: \.self){ scheduleTime in
+                ScheduleItemView(scheduleTime: scheduleTime)
+                }
+            }
+        }
     }
 }
 
 struct ScheduleListView_Previews: PreviewProvider {
     static var previews: some View {
-        ScheduleListView()
+        ScheduleListView().environmentObject(UserData())
     }
 }
