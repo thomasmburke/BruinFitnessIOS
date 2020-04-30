@@ -18,6 +18,7 @@
 		434B1B6F245A871A00B351E4 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B6E245A871A00B351E4 /* ScheduleView.swift */; };
 		434B1B75245A88AB00B351E4 /* CustomDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B74245A88AB00B351E4 /* CustomDivider.swift */; };
 		434B1B77245A8CB300B351E4 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B76245A8CB300B351E4 /* Schedule.swift */; };
+		434B1B79245A8DB900B351E4 /* ScheduleItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B78245A8DB900B351E4 /* ScheduleItemView.swift */; };
 		43797FF52453E67C00B23CCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43797FF42453E67C00B23CCF /* AppDelegate.swift */; };
 		43797FF72453E67C00B23CCF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43797FF62453E67C00B23CCF /* SceneDelegate.swift */; };
 		43797FF92453E67C00B23CCF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43797FF82453E67C00B23CCF /* ContentView.swift */; };
@@ -38,6 +39,7 @@
 		434B1B6E245A871A00B351E4 /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
 		434B1B74245A88AB00B351E4 /* CustomDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDivider.swift; sourceTree = "<group>"; };
 		434B1B76245A8CB300B351E4 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		434B1B78245A8DB900B351E4 /* ScheduleItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleItemView.swift; sourceTree = "<group>"; };
 		43797FF12453E67C00B23CCF /* ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43797FF42453E67C00B23CCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43797FF62453E67C00B23CCF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				434B1B6E245A871A00B351E4 /* ScheduleView.swift */,
+				434B1B78245A8DB900B351E4 /* ScheduleItemView.swift */,
 			);
 			path = ScheduleViews;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				434B1B622458000700B351E4 /* Data.swift in Sources */,
 				434B1B53245682D000B351E4 /* WorkoutCardView.swift in Sources */,
 				434B1B642458008400B351E4 /* UserData.swift in Sources */,
+				434B1B79245A8DB900B351E4 /* ScheduleItemView.swift in Sources */,
 				434B1B592457EBB900B351E4 /* HorizontalCalendarView.swift in Sources */,
 				43797FF52453E67C00B23CCF /* AppDelegate.swift in Sources */,
 				43797FF72453E67C00B23CCF /* SceneDelegate.swift in Sources */,
