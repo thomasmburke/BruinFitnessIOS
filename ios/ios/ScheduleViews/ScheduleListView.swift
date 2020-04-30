@@ -15,8 +15,10 @@ struct ScheduleListView: View {
     var body: some View {
         List{
             ForEach(userData.schedules) { schedule in
-                ForEach(schedule.scheduleTimes, id: \.self){ scheduleTime in
-                ScheduleItemView(scheduleTime: scheduleTime)
+                Section(header: Text(schedule.workoutType)){
+                    ForEach(schedule.scheduleTimes, id: \.self){ scheduleTime in
+                        ScheduleItemView(scheduleTime: scheduleTime)
+                    }
                 }
             }
         }
