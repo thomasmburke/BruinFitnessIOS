@@ -14,7 +14,7 @@
 		434B1B622458000700B351E4 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B612458000700B351E4 /* Data.swift */; };
 		434B1B642458008400B351E4 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B632458008400B351E4 /* UserData.swift */; };
 		434B1B662458014B00B351E4 /* WorkoutCardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B652458014B00B351E4 /* WorkoutCardList.swift */; };
-		434B1B682458A65C00B351E4 /* DeleteMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B672458A65C00B351E4 /* DeleteMe.swift */; };
+		434B1B6C245A745D00B351E4 /* ProgrammingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B6B245A745D00B351E4 /* ProgrammingView.swift */; };
 		43797FF52453E67C00B23CCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43797FF42453E67C00B23CCF /* AppDelegate.swift */; };
 		43797FF72453E67C00B23CCF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43797FF62453E67C00B23CCF /* SceneDelegate.swift */; };
 		43797FF92453E67C00B23CCF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43797FF82453E67C00B23CCF /* ContentView.swift */; };
@@ -31,7 +31,7 @@
 		434B1B612458000700B351E4 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		434B1B632458008400B351E4 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		434B1B652458014B00B351E4 /* WorkoutCardList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCardList.swift; sourceTree = "<group>"; };
-		434B1B672458A65C00B351E4 /* DeleteMe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteMe.swift; sourceTree = "<group>"; };
+		434B1B6B245A745D00B351E4 /* ProgrammingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammingView.swift; sourceTree = "<group>"; };
 		43797FF12453E67C00B23CCF /* ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43797FF42453E67C00B23CCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43797FF62453E67C00B23CCF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,8 +58,8 @@
 			children = (
 				434B1B582457EBB900B351E4 /* HorizontalCalendarView.swift */,
 				434B1B52245682D000B351E4 /* WorkoutCardView.swift */,
+				434B1B6B245A745D00B351E4 /* ProgrammingView.swift */,
 				434B1B652458014B00B351E4 /* WorkoutCardList.swift */,
-				434B1B672458A65C00B351E4 /* DeleteMe.swift */,
 			);
 			path = ProgrammingViews;
 			sourceTree = "<group>";
@@ -195,11 +195,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				434B1B6C245A745D00B351E4 /* ProgrammingView.swift in Sources */,
 				434B1B622458000700B351E4 /* Data.swift in Sources */,
 				434B1B53245682D000B351E4 /* WorkoutCardView.swift in Sources */,
 				434B1B642458008400B351E4 /* UserData.swift in Sources */,
 				434B1B592457EBB900B351E4 /* HorizontalCalendarView.swift in Sources */,
-				434B1B682458A65C00B351E4 /* DeleteMe.swift in Sources */,
 				43797FF52453E67C00B23CCF /* AppDelegate.swift in Sources */,
 				43797FF72453E67C00B23CCF /* SceneDelegate.swift in Sources */,
 				43797FF92453E67C00B23CCF /* ContentView.swift in Sources */,

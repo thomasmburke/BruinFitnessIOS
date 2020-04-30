@@ -31,7 +31,7 @@ struct ContentView: View {
                     }
                 }
                 .tag(0)
-            WorkoutCardList()
+            ProgrammingView()
                 .tabItem {
                     VStack {
                         Image("baseline_schedule_white_24pt")
