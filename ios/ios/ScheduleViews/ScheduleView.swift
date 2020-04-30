@@ -10,7 +10,28 @@ import SwiftUI
 
 struct ScheduleView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            
+            // Add HorizontalCalendarView here
+            
+            Text("Boston")
+                .font(.title)
+                .fontWeight(.bold)
+                .foregroundColor(Color.white)
+                .padding([.top, .leading, .trailing])
+                .edgesIgnoringSafeArea(.bottom)
+            
+            /*Divider()
+                .padding()
+                .frame(height: 2.0)
+            .background(Color("bruinGreenColor"))*/
+            
+            // Using Custom Divider to get horizontal padding
+            CustomDivider()
+            
+            Spacer()
+        }
+        .background(Color("bruinBackgroundColor"))
     }
 }
 

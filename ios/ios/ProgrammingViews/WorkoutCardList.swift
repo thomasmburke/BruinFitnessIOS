@@ -26,6 +26,8 @@ struct WorkoutCardList: View {
                 
                 //.animation(.easeInOut(duration: 1.5))
             }
+            // Make each of the cards wider
+            //.listRowInsets(EdgeInsets())
         }
         // stops row item from jumping when collapsed
         // but unfortunately breaks all other animations

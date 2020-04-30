@@ -15,6 +15,8 @@
 		434B1B642458008400B351E4 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B632458008400B351E4 /* UserData.swift */; };
 		434B1B662458014B00B351E4 /* WorkoutCardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B652458014B00B351E4 /* WorkoutCardList.swift */; };
 		434B1B6C245A745D00B351E4 /* ProgrammingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B6B245A745D00B351E4 /* ProgrammingView.swift */; };
+		434B1B6F245A871A00B351E4 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B6E245A871A00B351E4 /* ScheduleView.swift */; };
+		434B1B75245A88AB00B351E4 /* CustomDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B74245A88AB00B351E4 /* CustomDivider.swift */; };
 		43797FF52453E67C00B23CCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43797FF42453E67C00B23CCF /* AppDelegate.swift */; };
 		43797FF72453E67C00B23CCF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43797FF62453E67C00B23CCF /* SceneDelegate.swift */; };
 		43797FF92453E67C00B23CCF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43797FF82453E67C00B23CCF /* ContentView.swift */; };
@@ -32,6 +34,8 @@
 		434B1B632458008400B351E4 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		434B1B652458014B00B351E4 /* WorkoutCardList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCardList.swift; sourceTree = "<group>"; };
 		434B1B6B245A745D00B351E4 /* ProgrammingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammingView.swift; sourceTree = "<group>"; };
+		434B1B6E245A871A00B351E4 /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
+		434B1B74245A88AB00B351E4 /* CustomDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDivider.swift; sourceTree = "<group>"; };
 		43797FF12453E67C00B23CCF /* ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43797FF42453E67C00B23CCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43797FF62453E67C00B23CCF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +86,22 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		434B1B6D245A86FB00B351E4 /* ScheduleViews */ = {
+			isa = PBXGroup;
+			children = (
+				434B1B6E245A871A00B351E4 /* ScheduleView.swift */,
+			);
+			path = ScheduleViews;
+			sourceTree = "<group>";
+		};
+		434B1B73245A889400B351E4 /* Supporting Views */ = {
+			isa = PBXGroup;
+			children = (
+				434B1B74245A88AB00B351E4 /* CustomDivider.swift */,
+			);
+			path = "Supporting Views";
+			sourceTree = "<group>";
+		};
 		43797FE82453E67C00B23CCF = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +121,8 @@
 		43797FF32453E67C00B23CCF /* ios */ = {
 			isa = PBXGroup;
 			children = (
+				434B1B73245A889400B351E4 /* Supporting Views */,
+				434B1B6D245A86FB00B351E4 /* ScheduleViews */,
 				434B1B5E2457FF0F00B351E4 /* Resources */,
 				434B1B5B2457FA1000B351E4 /* Models */,
 				434B1B5A2457EBCF00B351E4 /* ProgrammingViews */,
@@ -203,7 +225,9 @@
 				43797FF52453E67C00B23CCF /* AppDelegate.swift in Sources */,
 				43797FF72453E67C00B23CCF /* SceneDelegate.swift in Sources */,
 				43797FF92453E67C00B23CCF /* ContentView.swift in Sources */,
+				434B1B75245A88AB00B351E4 /* CustomDivider.swift in Sources */,
 				434B1B662458014B00B351E4 /* WorkoutCardList.swift in Sources */,
+				434B1B6F245A871A00B351E4 /* ScheduleView.swift in Sources */,
 				434B1B5D2457FA4E00B351E4 /* Workout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

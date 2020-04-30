@@ -15,12 +15,19 @@ struct ProgrammingView: View {
     var body: some View {
         
         VStack{
-            Text("Bruin Programming")
-                .font(.largeTitle)
-                .fontWeight(.bold)
-                .foregroundColor(Color.white)
-                .padding([.top, .leading, .trailing])
-                .edgesIgnoringSafeArea(.bottom)
+            
+            // Add HorizontalCalendarView here
+            
+            HStack{
+                Text("Bruin Programming")
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .foregroundColor(Color.white)
+                    .padding([.top, .leading, .trailing])
+                    .edgesIgnoringSafeArea(.bottom)
+                
+                Spacer()
+            }
             
             /*Divider()
                 .padding()
@@ -35,17 +42,6 @@ struct ProgrammingView: View {
         .background(Color("bruinBackgroundColor"))
         
         
-    }
-}
-
-struct CustomDivider: View {
-    let color: Color = Color("bruinGreenColor")
-    let width: CGFloat = 2
-    var body: some View {
-        Rectangle()
-            .fill(color)
-            .frame(height: width)
-            .padding(.horizontal)
     }
 }
 
