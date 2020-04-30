@@ -11,4 +11,5 @@ import SwiftUI
 
 final class UserData: ObservableObject {
     @Published var workouts = workoutData
+    @Published var schedules = scheduleData
 }
