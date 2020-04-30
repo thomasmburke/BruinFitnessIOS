@@ -9,15 +9,18 @@
 import SwiftUI
 
 struct ScheduleItemView: View {
+    
+    var scheduleTime: Schedule.ScheduleTimes
+    
     var body: some View {
         HStack{
-            Text("5:00am - 6:00am")
+            Text(scheduleTime.time)
             .font(.body)
             .foregroundColor(Color.white.opacity(0.87))
             
             Spacer()
             
-            Text("Mon-Fri")
+            Text(scheduleTime.day)
             .font(.body)
             .foregroundColor(Color.white.opacity(0.87))
         }
@@ -28,6 +31,6 @@ struct ScheduleItemView: View {
 
 struct ScheduleItemView_Previews: PreviewProvider {
     static var previews: some View {
-        ScheduleItemView()
+        ScheduleItemView(scheduleTime: scheduleData[0].scheduleTimes[0])
     }
 }
