@@ -17,6 +17,7 @@
 		434B1B6C245A745D00B351E4 /* ProgrammingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B6B245A745D00B351E4 /* ProgrammingView.swift */; };
 		434B1B6F245A871A00B351E4 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B6E245A871A00B351E4 /* ScheduleView.swift */; };
 		434B1B75245A88AB00B351E4 /* CustomDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B74245A88AB00B351E4 /* CustomDivider.swift */; };
+		434B1B77245A8CB300B351E4 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B76245A8CB300B351E4 /* Schedule.swift */; };
 		43797FF52453E67C00B23CCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43797FF42453E67C00B23CCF /* AppDelegate.swift */; };
 		43797FF72453E67C00B23CCF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43797FF62453E67C00B23CCF /* SceneDelegate.swift */; };
 		43797FF92453E67C00B23CCF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43797FF82453E67C00B23CCF /* ContentView.swift */; };
@@ -36,6 +37,7 @@
 		434B1B6B245A745D00B351E4 /* ProgrammingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammingView.swift; sourceTree = "<group>"; };
 		434B1B6E245A871A00B351E4 /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
 		434B1B74245A88AB00B351E4 /* CustomDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDivider.swift; sourceTree = "<group>"; };
+		434B1B76245A8CB300B351E4 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 		43797FF12453E67C00B23CCF /* ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43797FF42453E67C00B23CCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43797FF62453E67C00B23CCF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				434B1B5C2457FA4E00B351E4 /* Workout.swift */,
 				434B1B612458000700B351E4 /* Data.swift */,
 				434B1B632458008400B351E4 /* UserData.swift */,
+				434B1B76245A8CB300B351E4 /* Schedule.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 				434B1B75245A88AB00B351E4 /* CustomDivider.swift in Sources */,
 				434B1B662458014B00B351E4 /* WorkoutCardList.swift in Sources */,
 				434B1B6F245A871A00B351E4 /* ScheduleView.swift in Sources */,
+				434B1B77245A8CB300B351E4 /* Schedule.swift in Sources */,
 				434B1B5D2457FA4E00B351E4 /* Workout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
