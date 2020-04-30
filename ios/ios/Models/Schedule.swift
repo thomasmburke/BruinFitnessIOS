@@ -11,9 +11,9 @@ import SwiftUI
 struct Schedule: Codable, Hashable, Identifiable {
     var id: Int
     var workoutType: String
-    var scheduleTimes: [ScheduleTimes]
+    var scheduleTimes: [ScheduleTime]
     
-    struct ScheduleTimes: Codable, Hashable {
+    struct ScheduleTime: Codable, Hashable {
         var day: String
         var time: String
     }
