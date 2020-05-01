@@ -15,6 +15,7 @@ struct ScheduleListView: View {
     init(){
         UITableView.appearance().backgroundColor = .clear
         //UITableView.appearance().separatorStyle = .none
+        //UITableView.appearance().separatorColor = .white
         UITableViewCell.appearance().backgroundColor = .clear
     }
     

@@ -15,6 +15,7 @@ struct WorkoutCardList: View {
     init(){
         UITableView.appearance().backgroundColor = .clear
         UITableView.appearance().separatorStyle = .none
+        //UITableView.appearance().separatorColor = .clear
         UITableViewCell.appearance().backgroundColor = .clear
     }
     

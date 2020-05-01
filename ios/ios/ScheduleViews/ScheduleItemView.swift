@@ -13,19 +13,23 @@ struct ScheduleItemView: View {
     var scheduleTime: Schedule.ScheduleTime
     
     var body: some View {
-        HStack{
-            Text(scheduleTime.time)
-            .font(.body)
-            .foregroundColor(Color.white.opacity(0.87))
-            
-            Spacer()
-            
-            Text(scheduleTime.day)
-            .font(.body)
-            .foregroundColor(Color.white.opacity(0.87))
-        }
-        .padding()
-        .background(Color("bruinBackgroundColor"))
+        //VStack{
+          //  CustomDivider(color: Color.white, width: 1)
+            HStack{
+                Text(scheduleTime.time)
+                .font(.body)
+                .foregroundColor(Color.white.opacity(0.87))
+                
+                Spacer()
+                
+                Text(scheduleTime.day)
+                .font(.body)
+                .foregroundColor(Color.white.opacity(0.87))
+            }
+            .padding()
+            .background(Color("bruinBackgroundColor"))
+        //}
+        
     }
 }
 
