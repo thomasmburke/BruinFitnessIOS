@@ -12,6 +12,12 @@ struct ScheduleListView: View {
     
     @EnvironmentObject private var userData: UserData
     
+    init(){
+        UITableView.appearance().backgroundColor = .clear
+        //UITableView.appearance().separatorStyle = .none
+        UITableViewCell.appearance().backgroundColor = .clear
+    }
+    
     var body: some View {
         List{
             ForEach(userData.schedules) { schedule in
@@ -22,6 +28,10 @@ struct ScheduleListView: View {
                 }
             }
         }
+        // background color surrounding list items
+        .listRowBackground(Color("bruinBackgroundColor"))
+        // background color of entire view list
+        .background(Color("bruinBackgroundColor"))
     }
 }
 
