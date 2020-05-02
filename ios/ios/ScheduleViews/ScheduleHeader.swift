@@ -13,14 +13,19 @@ struct ScheduleHeader: View {
     var scheduleHeader: String
     
     var body: some View {
-        HStack{
-            Text(scheduleHeader)
-                .font(.headline)
-                .foregroundColor(Color.white)
-                .bold()
-                .padding()
-        
-        Spacer()
+        VStack(spacing: 0){
+            HStack{
+                Text(scheduleHeader)
+                    .font(.headline)
+                    .foregroundColor(Color.white)
+                    .bold()
+                    .padding()
+                
+            
+            Spacer()
+            }
+            
+            CustomDivider(color: Color("bruinGreenColor"), width: 1)
         }
         .background(Color("bruinBackgroundColor"))
         .listRowInsets(EdgeInsets(
