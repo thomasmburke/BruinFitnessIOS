@@ -13,6 +13,8 @@ struct ScheduleHeader: View {
     var scheduleHeader: String
     
     var body: some View {
+        // set spacing to 0 so there is no vertical padding built into the VStack
+        // removes spacing between header's padding and CustomDivider()
         VStack(spacing: 0){
             HStack{
                 Text(scheduleHeader)

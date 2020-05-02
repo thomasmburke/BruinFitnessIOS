@@ -13,8 +13,8 @@ struct ScheduleItemView: View {
     var scheduleTime: Schedule.ScheduleTime
     
     var body: some View {
-        //VStack{
-          //  CustomDivider(color: Color.white, width: 1)
+        VStack(spacing: 0){
+         
             HStack{
                 Text(scheduleTime.time)
                 .font(.body)
@@ -28,8 +28,14 @@ struct ScheduleItemView: View {
             }
             .padding()
             .background(Color("bruinBackgroundColor"))
-        //}
-        
+            
+            CustomDivider(color: Color.black, width: 1)
+        }
+        .listRowInsets(EdgeInsets(
+        top: 0,
+        leading: 10,
+        bottom: 0,
+        trailing: 10))
     }
 }
 

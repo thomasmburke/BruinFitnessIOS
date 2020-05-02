@@ -30,7 +30,10 @@ struct ScheduleView: View {
             .background(Color("bruinGreenColor"))*/
             
             // Using Custom Divider to get horizontal padding
-            CustomDivider(color: Color("bruinGreenColor"), width: 2)
+            CustomDivider(color:
+                Color("bruinGreenColor"),
+                //Color.black,
+                width: 2)
             
             ScheduleListView()
         }
