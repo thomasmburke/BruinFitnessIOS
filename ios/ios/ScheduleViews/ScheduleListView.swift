@@ -22,7 +22,7 @@ struct ScheduleListView: View {
     var body: some View {
         List{
             ForEach(userData.schedules) { schedule in
-                Section(header: Text(schedule.workoutType)){
+                Section(header:ScheduleHeader(scheduleHeader: schedule.workoutType)){
                     ForEach(schedule.scheduleTimes, id: \.self){ scheduleTime in
                         ScheduleItemView(scheduleTime: scheduleTime)
                     }
