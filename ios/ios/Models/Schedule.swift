@@ -17,4 +17,6 @@ struct Schedule: Codable, Hashable, Identifiable {
         var day: String
         var time: String
     }
+    
+    
 }

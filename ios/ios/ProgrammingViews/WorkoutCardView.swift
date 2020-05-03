@@ -72,7 +72,7 @@ struct WorkoutCardView: View {
                 .stroke(Color("workoutCardBorderColor"), lineWidth: 4)
         )
         // outer card padding, so card doesn't touch edges of the screen
-        .padding()
+        //.padding()
     }
     
     func subView() -> some View {

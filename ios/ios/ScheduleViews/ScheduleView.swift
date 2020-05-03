@@ -24,16 +24,18 @@ struct ScheduleView: View {
                 .padding([.top, .leading, .trailing])
                 .edgesIgnoringSafeArea(.bottom)
             
-            /*Divider()
-                .padding()
-                .frame(height: 2.0)
-            .background(Color("bruinGreenColor"))*/
-            
             // Using Custom Divider to get horizontal padding
             CustomDivider(color:
                 Color("bruinGreenColor"),
                 //Color.black,
-                width: 2)
+                width: 1)
+            
+            ScheduleFilterListView()
+            
+            CustomDivider(color:
+            Color("bruinGreenColor"),
+            //Color.black,
+            width: 1)
             
             ScheduleListView()
         }
