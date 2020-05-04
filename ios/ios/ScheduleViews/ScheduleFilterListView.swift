@@ -11,7 +11,13 @@ import SwiftUI
 struct ScheduleFilterListView: View {
     
     @EnvironmentObject private var userData: UserData
-    @State private var workoutTypeExample = "Crossfit"
+    @State private var workoutTypeExample = 0
+    
+    init() {
+        UISegmentedControl.appearance().selectedSegmentTintColor = .black
+        UISegmentedControl.appearance().setTitleTextAttributes([.foregroundColor: UIColor.white], for: .selected)
+        UISegmentedControl.appearance().setTitleTextAttributes([.foregroundColor: UIColor.gray], for: .normal)
+    }
     
     var body: some View {
 //        ScrollView(.horizontal, showsIndicators: true){
@@ -38,6 +44,8 @@ struct ScheduleFilterListView: View {
             }
         }
         .pickerStyle(SegmentedPickerStyle())
+        .background(Color("bruinBackgroundColor"))
+        .padding(.horizontal)
         
     }
 }

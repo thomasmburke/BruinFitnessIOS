@@ -26,15 +26,15 @@ struct ScheduleView: View {
             
             // Using Custom Divider to get horizontal padding
             CustomDivider(color:
-                Color("bruinGreenColor"),
-                //Color.black,
+                //Color("bruinGreenColor"),
+                Color.black,
                 width: 1)
             
             ScheduleFilterListView()
             
             CustomDivider(color:
-            Color("bruinGreenColor"),
-            //Color.black,
+            //Color("bruinGreenColor"),
+            Color.black,
             width: 1)
             
             ScheduleListView()
