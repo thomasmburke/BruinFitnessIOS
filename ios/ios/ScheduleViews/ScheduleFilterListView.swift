@@ -11,7 +11,7 @@ import SwiftUI
 struct ScheduleFilterListView: View {
     
     @EnvironmentObject private var userData: UserData
-    @State private var workoutTypeExample = 0
+    //@State private var workoutTypeExample = "All"
     
     init() {
         UISegmentedControl.appearance().selectedSegmentTintColor = .black
@@ -38,9 +38,12 @@ struct ScheduleFilterListView: View {
 //        .background(Color("bruinBackgroundColor"))
         
         
-        Picker("Seasonal Photo", selection: $workoutTypeExample) {
+        Picker("Schedule Filter",
+               //selection: $workoutTypeExample) {
+        selection: $userData.scheduleFilter) {
+            Text("All").tag("All")
             ForEach(userData.schedules) { schedule in
-                Text(schedule.workoutType).tag(schedule)
+                Text(schedule.workoutType).tag(schedule.workoutType)
             }
         }
         .pickerStyle(SegmentedPickerStyle())

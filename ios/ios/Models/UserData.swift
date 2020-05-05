@@ -12,4 +12,8 @@ import SwiftUI
 final class UserData: ObservableObject {
     @Published var workouts = workoutData
     @Published var schedules = scheduleData
+    
+    // ScheduleFilterListView modifies this state variable
+    // ScheduleListView listens and diplays corresponding schedules
+    @Published var scheduleFilter = "All"
 }
