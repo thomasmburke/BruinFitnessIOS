@@ -4,6 +4,7 @@
 # Firebase
 GoogleService-Info.plist
 ios/GoogleService-Info.plist
+Pods/
 
 ## User settings
 xcuserdata/
