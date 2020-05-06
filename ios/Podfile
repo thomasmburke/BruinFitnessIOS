@@ -16,4 +16,7 @@ target 'ios' do
   pod 'Firebase/Performance'
   pod 'Firebase/RemoteConfig'
 
+  # Additional library for Firestore with Swift Codable support
+  pod 'FirebaseFirestoreSwift'
+
 end
