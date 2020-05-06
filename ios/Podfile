@@ -7,16 +7,17 @@ target 'ios' do
 
   # Firebase Pods for ios
   pod 'Firebase/Analytics'
-  pod 'Firebase/Auth'
+  #pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
-  pod 'Firebase/Functions'
-  pod 'Firebase/Messaging'
-  pod 'Firebase/Storage'
+  #pod 'Firebase/Functions'
+  #pod 'Firebase/Messaging'
+  #pod 'Firebase/Storage'
   pod 'Firebase/Crashlytics'
-  pod 'Firebase/Performance'
-  pod 'Firebase/RemoteConfig'
+  #pod 'Firebase/Performance'
+  #pod 'Firebase/RemoteConfig'
 
   # Additional library for Firestore with Swift Codable support
   pod 'FirebaseFirestoreSwift'
+  pod 'Resolver'
 
 end
