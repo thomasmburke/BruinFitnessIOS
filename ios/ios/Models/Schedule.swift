@@ -7,6 +7,8 @@
 //
 
 import SwiftUI
+import FirebaseFirestore
+import FirebaseFirestoreSwift
 
 struct Schedule: Codable, Hashable, Identifiable {
     var id: Int
