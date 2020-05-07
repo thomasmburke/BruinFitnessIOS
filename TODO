@@ -1,3 +1,6 @@
+Warnings to investigate:
+- TableView warning
+
 UI nice to haves:
 - fix card closing animation to not jump to top of list item space
     - others talking about the same issue: https://www.reddit.com/r/SwiftUI/comments/e2jgnz/expandable_swiftui_list_row_with_animation/
