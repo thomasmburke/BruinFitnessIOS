@@ -14,8 +14,8 @@ struct ScheduleFilterListView: View {
     //@State private var workoutTypeExample = "All"
     
     init() {
-        UISegmentedControl.appearance().selectedSegmentTintColor = .black
-        UISegmentedControl.appearance().setTitleTextAttributes([.foregroundColor: UIColor.white], for: .selected)
+        UISegmentedControl.appearance().selectedSegmentTintColor = UIColor(named: "bruinBackgroundColor")
+        UISegmentedControl.appearance().setTitleTextAttributes([.foregroundColor: UIColor(named: "bruinGreenColor") ?? UIColor.white], for: .selected)
         UISegmentedControl.appearance().setTitleTextAttributes([.foregroundColor: UIColor.gray], for: .normal)
     }
     

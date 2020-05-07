@@ -13,9 +13,8 @@ import SwiftUI
 struct ContentView: View {
     
     init() {
-        UITabBar.appearance().barTintColor = UIColor.black
+        UITabBar.appearance().barTintColor = UIColor(named: "bruinBackgroundColor")
         UITabBar.appearance().isTranslucent = false
-        //UITabBar.appearance().backgroundColor = UIColor.black
     }
         
     @State private var selection = 0
