@@ -37,6 +37,15 @@ struct ContentView: View {
                     }
                 }
                 .tag(1)
+            
+            TestListView()
+            .tabItem {
+                VStack {
+                    Image("baseline_schedule_white_24pt")
+                    Text("Test")
+                }
+            }
+            .tag(2)
         
         }
         .accentColor(Color("bruinGreenColor"))

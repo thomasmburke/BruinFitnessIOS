@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,6 +24,12 @@
 		434B1B7F245D3BC800B351E4 /* ScheduleHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B7E245D3BC800B351E4 /* ScheduleHeader.swift */; };
 		434B1B81245E8FD100B351E4 /* ScheduleFilterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B80245E8FD100B351E4 /* ScheduleFilterListView.swift */; };
 		434B1B832460D98F00B351E4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 434B1B822460D98E00B351E4 /* GoogleService-Info.plist */; };
+		434B1B852463AF8300B351E4 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B842463AF8300B351E4 /* Test.swift */; };
+		434B1B882463B12800B351E4 /* TestRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B872463B12800B351E4 /* TestRepository.swift */; };
+		434B1B8A2463BDFD00B351E4 /* AppDelegate+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B892463BDFD00B351E4 /* AppDelegate+Injection.swift */; };
+		434B1B8D2463C03800B351E4 /* TestListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B8C2463C03800B351E4 /* TestListView.swift */; };
+		434B1B8F2463C07000B351E4 /* TestListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B8E2463C07000B351E4 /* TestListViewModel.swift */; };
+		434B1B912463C0B300B351E4 /* TestCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B902463C0B300B351E4 /* TestCellViewModel.swift */; };
 		43797FF52453E67C00B23CCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43797FF42453E67C00B23CCF /* AppDelegate.swift */; };
 		43797FF72453E67C00B23CCF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43797FF62453E67C00B23CCF /* SceneDelegate.swift */; };
 		43797FF92453E67C00B23CCF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43797FF82453E67C00B23CCF /* ContentView.swift */; };
@@ -52,6 +58,12 @@
 		434B1B7E245D3BC800B351E4 /* ScheduleHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleHeader.swift; sourceTree = "<group>"; };
 		434B1B80245E8FD100B351E4 /* ScheduleFilterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleFilterListView.swift; sourceTree = "<group>"; };
 		434B1B822460D98E00B351E4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		434B1B842463AF8300B351E4 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		434B1B872463B12800B351E4 /* TestRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRepository.swift; sourceTree = "<group>"; };
+		434B1B892463BDFD00B351E4 /* AppDelegate+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Injection.swift"; sourceTree = "<group>"; };
+		434B1B8C2463C03800B351E4 /* TestListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestListView.swift; sourceTree = "<group>"; };
+		434B1B8E2463C07000B351E4 /* TestListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestListViewModel.swift; sourceTree = "<group>"; };
+		434B1B902463C0B300B351E4 /* TestCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCellViewModel.swift; sourceTree = "<group>"; };
 		43797FF12453E67C00B23CCF /* ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43797FF42453E67C00B23CCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43797FF62453E67C00B23CCF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +104,7 @@
 			children = (
 				434B1B5C2457FA4E00B351E4 /* Workout.swift */,
 				434B1B612458000700B351E4 /* Data.swift */,
+				434B1B842463AF8300B351E4 /* Test.swift */,
 				434B1B632458008400B351E4 /* UserData.swift */,
 				434B1B76245A8CB300B351E4 /* Schedule.swift */,
 			);
@@ -127,6 +140,24 @@
 			path = "Supporting Views";
 			sourceTree = "<group>";
 		};
+		434B1B862463B10C00B351E4 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				434B1B872463B12800B351E4 /* TestRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		434B1B8B2463BEE600B351E4 /* TestViews */ = {
+			isa = PBXGroup;
+			children = (
+				434B1B8C2463C03800B351E4 /* TestListView.swift */,
+				434B1B8E2463C07000B351E4 /* TestListViewModel.swift */,
+				434B1B902463C0B300B351E4 /* TestCellViewModel.swift */,
+			);
+			path = TestViews;
+			sourceTree = "<group>";
+		};
 		43797FE82453E67C00B23CCF = {
 			isa = PBXGroup;
 			children = (
@@ -148,12 +179,15 @@
 		43797FF32453E67C00B23CCF /* ios */ = {
 			isa = PBXGroup;
 			children = (
+				434B1B8B2463BEE600B351E4 /* TestViews */,
+				434B1B862463B10C00B351E4 /* Repositories */,
 				434B1B73245A889400B351E4 /* Supporting Views */,
 				434B1B6D245A86FB00B351E4 /* ScheduleViews */,
 				434B1B5E2457FF0F00B351E4 /* Resources */,
 				434B1B5B2457FA1000B351E4 /* Models */,
 				434B1B5A2457EBCF00B351E4 /* ProgrammingViews */,
 				43797FF42453E67C00B23CCF /* AppDelegate.swift */,
+				434B1B892463BDFD00B351E4 /* AppDelegate+Injection.swift */,
 				43797FF62453E67C00B23CCF /* SceneDelegate.swift */,
 				43797FF82453E67C00B23CCF /* ContentView.swift */,
 				43797FFA2453E68400B23CCF /* Assets.xcassets */,
@@ -179,7 +213,6 @@
 				3F4DD958BF6A96059E720551 /* Pods-ios.debug.xcconfig */,
 				E6B6010C6312A2C2E3035397 /* Pods-ios.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -313,16 +346,22 @@
 				434B1B81245E8FD100B351E4 /* ScheduleFilterListView.swift in Sources */,
 				434B1B6C245A745D00B351E4 /* ProgrammingView.swift in Sources */,
 				434B1B622458000700B351E4 /* Data.swift in Sources */,
+				434B1B8A2463BDFD00B351E4 /* AppDelegate+Injection.swift in Sources */,
 				434B1B53245682D000B351E4 /* WorkoutCardView.swift in Sources */,
 				434B1B642458008400B351E4 /* UserData.swift in Sources */,
 				434B1B7F245D3BC800B351E4 /* ScheduleHeader.swift in Sources */,
 				434B1B79245A8DB900B351E4 /* ScheduleItemView.swift in Sources */,
 				434B1B592457EBB900B351E4 /* HorizontalCalendarView.swift in Sources */,
+				434B1B882463B12800B351E4 /* TestRepository.swift in Sources */,
 				43797FF52453E67C00B23CCF /* AppDelegate.swift in Sources */,
 				43797FF72453E67C00B23CCF /* SceneDelegate.swift in Sources */,
+				434B1B852463AF8300B351E4 /* Test.swift in Sources */,
+				434B1B8F2463C07000B351E4 /* TestListViewModel.swift in Sources */,
 				43797FF92453E67C00B23CCF /* ContentView.swift in Sources */,
+				434B1B8D2463C03800B351E4 /* TestListView.swift in Sources */,
 				434B1B75245A88AB00B351E4 /* CustomDivider.swift in Sources */,
 				434B1B662458014B00B351E4 /* WorkoutCardList.swift in Sources */,
+				434B1B912463C0B300B351E4 /* TestCellViewModel.swift in Sources */,
 				434B1B6F245A871A00B351E4 /* ScheduleView.swift in Sources */,
 				434B1B77245A8CB300B351E4 /* Schedule.swift in Sources */,
 				434B1B5D2457FA4E00B351E4 /* Workout.swift in Sources */,

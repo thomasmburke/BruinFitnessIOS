@@ -9,8 +9,15 @@
 import SwiftUI
 
 struct TestListView: View {
+    
+    @ObservedObject var testListVM = TestListViewModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List {
+            ForEach (testListVM.testCellViewModels) { testCellVM in
+                TestCell(testCellVM: testCellVM)
+            }
+        }
     }
 }
 
@@ -18,4 +25,17 @@ struct TestListView_Previews: PreviewProvider {
     static var previews: some View {
         TestListView()
     }
+}
+
+
+struct TestCell: View {
+  @ObservedObject var testCellVM: TestCellViewModel
+  //var onCommit: (Result<Test, InputError>) -> Void = { _ in }
+  
+  var body: some View {
+    HStack {
+        Text(testCellVM.test.title)
+        Text(testCellVM.test.desc)
+    }
+  }
 }
