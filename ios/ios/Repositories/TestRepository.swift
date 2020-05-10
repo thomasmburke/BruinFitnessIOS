@@ -5,13 +5,11 @@
 //  Created by Tom Burke on 5/6/20.
 //  Copyright © 2020 Bruin Fitness. All rights reserved.
 //
-import Foundation
-//import Disk
 
+import Foundation
 import Firebase
 import FirebaseFirestore
 import FirebaseFirestoreSwift
-//import FirebaseFunctions
 
 import Combine
 import Resolver
@@ -133,3 +131,4 @@ class FirestoreTestRepository: BaseTestRepository, TestRepository, ObservableObj
     }
   }*/
 }
+

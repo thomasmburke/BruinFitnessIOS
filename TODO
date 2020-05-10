@@ -6,3 +6,5 @@ UI nice to haves:
     - others talking about the same issue: https://www.reddit.com/r/SwiftUI/comments/e2jgnz/expandable_swiftui_list_row_with_animation/
     - fixed with fast or no animation
 - buttonStyle currently stops card from flashing white, but only allows the chevron to be pressed. Ideally this would be the entire card
+- Is @Binding more appropriate to the schedule filter?
+- use TextFields to add workout cards to the database for admins

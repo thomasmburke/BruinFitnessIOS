@@ -29,13 +29,11 @@ struct TestListView_Previews: PreviewProvider {
 
 
 struct TestCell: View {
-  @ObservedObject var testCellVM: TestCellViewModel
-  //var onCommit: (Result<Test, InputError>) -> Void = { _ in }
-  
-  var body: some View {
-    HStack {
-        Text(testCellVM.test.title)
-        Text(testCellVM.test.desc)
+    @ObservedObject var testCellVM: TestCellViewModel
+    var body: some View {
+        HStack {
+            Text(testCellVM.test.title)
+            Text(testCellVM.test.desc)
+        }
     }
-  }
 }

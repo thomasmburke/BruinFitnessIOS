@@ -158,6 +158,16 @@
 			path = TestViews;
 			sourceTree = "<group>";
 		};
+		434B1B9224674CBB00B351E4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				43797FF62453E67C00B23CCF /* SceneDelegate.swift */,
+				434B1B892463BDFD00B351E4 /* AppDelegate+Injection.swift */,
+				43797FF42453E67C00B23CCF /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		43797FE82453E67C00B23CCF = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +189,7 @@
 		43797FF32453E67C00B23CCF /* ios */ = {
 			isa = PBXGroup;
 			children = (
+				434B1B9224674CBB00B351E4 /* App */,
 				434B1B8B2463BEE600B351E4 /* TestViews */,
 				434B1B862463B10C00B351E4 /* Repositories */,
 				434B1B73245A889400B351E4 /* Supporting Views */,
@@ -186,9 +197,6 @@
 				434B1B5E2457FF0F00B351E4 /* Resources */,
 				434B1B5B2457FA1000B351E4 /* Models */,
 				434B1B5A2457EBCF00B351E4 /* ProgrammingViews */,
-				43797FF42453E67C00B23CCF /* AppDelegate.swift */,
-				434B1B892463BDFD00B351E4 /* AppDelegate+Injection.swift */,
-				43797FF62453E67C00B23CCF /* SceneDelegate.swift */,
 				43797FF82453E67C00B23CCF /* ContentView.swift */,
 				43797FFA2453E68400B23CCF /* Assets.xcassets */,
 				43797FFF2453E68400B23CCF /* LaunchScreen.storyboard */,
