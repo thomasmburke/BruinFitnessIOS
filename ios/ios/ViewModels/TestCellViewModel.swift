@@ -8,35 +8,34 @@
 
 import Foundation
 import Combine
-import Resolver
 
 class TestCellViewModel: ObservableObject, Identifiable  {
-  @Injected var testRepository: TestRepository
   
-  @Published var test: Test
-  
-  var id: String = ""
-  @Published var completionStateIconName = ""
-  
-  private var cancellables = Set<AnyCancellable>()
-  
-  static func newTest() -> TestCellViewModel {
+    var testRepository = TestRepository()
+    @Published var test: Test
+
+    var id: String = ""
+
+    private var cancellables = Set<AnyCancellable>()
+    /*
+    static func newTest() -> TestCellViewModel {
     TestCellViewModel(test: Test(title: "", desc: ""))
-  }
-  
-  init(test: Test) {
-    self.test = test
+    }
+    */
+
+    init(test: Test) {
+        self.test = test
 
     
     /*
      Combine Subscriptions to the Test Publisher
      */
     // Ensure Identifiable ids are being set for each TaskCellViewModel
-    $test
-        .compactMap { $0.id }
-        .assign(to: \.id, on: self)
-        // This will avoid memory leaks be unsubscribing any combine subscriptions upon de-init()
-        .store(in: &cancellables)
+        $test
+            .compactMap { $0.id }
+            .assign(to: \.id, on: self)
+            // This will avoid memory leaks be unsubscribing any combine subscriptions upon de-init()
+            .store(in: &cancellables)
     /*
     // This is leveraged if Tests will be updated
     $test

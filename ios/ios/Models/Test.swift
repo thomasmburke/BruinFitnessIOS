@@ -15,10 +15,3 @@ struct Test: Codable, Identifiable {
     var title: String
     var desc: String
 }
-
-#if DEBUG
-let testDataTests = [
-    Test(title: "Implement UI", desc: "Tom"),
-    Test(title: "Connect to Firebase", desc: "Margaux")
-]
-#endif

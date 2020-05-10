@@ -26,7 +26,6 @@
 		434B1B832460D98F00B351E4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 434B1B822460D98E00B351E4 /* GoogleService-Info.plist */; };
 		434B1B852463AF8300B351E4 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B842463AF8300B351E4 /* Test.swift */; };
 		434B1B882463B12800B351E4 /* TestRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B872463B12800B351E4 /* TestRepository.swift */; };
-		434B1B8A2463BDFD00B351E4 /* AppDelegate+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B892463BDFD00B351E4 /* AppDelegate+Injection.swift */; };
 		434B1B8D2463C03800B351E4 /* TestListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B8C2463C03800B351E4 /* TestListView.swift */; };
 		434B1B8F2463C07000B351E4 /* TestListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B8E2463C07000B351E4 /* TestListViewModel.swift */; };
 		434B1B912463C0B300B351E4 /* TestCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B902463C0B300B351E4 /* TestCellViewModel.swift */; };
@@ -60,7 +59,6 @@
 		434B1B822460D98E00B351E4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		434B1B842463AF8300B351E4 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		434B1B872463B12800B351E4 /* TestRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRepository.swift; sourceTree = "<group>"; };
-		434B1B892463BDFD00B351E4 /* AppDelegate+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Injection.swift"; sourceTree = "<group>"; };
 		434B1B8C2463C03800B351E4 /* TestListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestListView.swift; sourceTree = "<group>"; };
 		434B1B8E2463C07000B351E4 /* TestListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestListViewModel.swift; sourceTree = "<group>"; };
 		434B1B902463C0B300B351E4 /* TestCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCellViewModel.swift; sourceTree = "<group>"; };
@@ -148,24 +146,32 @@
 			path = Repositories;
 			sourceTree = "<group>";
 		};
-		434B1B8B2463BEE600B351E4 /* TestViews */ = {
-			isa = PBXGroup;
-			children = (
-				434B1B8C2463C03800B351E4 /* TestListView.swift */,
-				434B1B8E2463C07000B351E4 /* TestListViewModel.swift */,
-				434B1B902463C0B300B351E4 /* TestCellViewModel.swift */,
-			);
-			path = TestViews;
-			sourceTree = "<group>";
-		};
 		434B1B9224674CBB00B351E4 /* App */ = {
 			isa = PBXGroup;
 			children = (
 				43797FF62453E67C00B23CCF /* SceneDelegate.swift */,
-				434B1B892463BDFD00B351E4 /* AppDelegate+Injection.swift */,
 				43797FF42453E67C00B23CCF /* AppDelegate.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		434B1B9324679A4B00B351E4 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				434B1B8E2463C07000B351E4 /* TestListViewModel.swift */,
+				434B1B902463C0B300B351E4 /* TestCellViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		434B1B9524679A8300B351E4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				434B1B8C2463C03800B351E4 /* TestListView.swift */,
+				434B1B5A2457EBCF00B351E4 /* ProgrammingViews */,
+				434B1B6D245A86FB00B351E4 /* ScheduleViews */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		43797FE82453E67C00B23CCF = {
@@ -190,13 +196,12 @@
 			isa = PBXGroup;
 			children = (
 				434B1B9224674CBB00B351E4 /* App */,
-				434B1B8B2463BEE600B351E4 /* TestViews */,
-				434B1B862463B10C00B351E4 /* Repositories */,
-				434B1B73245A889400B351E4 /* Supporting Views */,
-				434B1B6D245A86FB00B351E4 /* ScheduleViews */,
-				434B1B5E2457FF0F00B351E4 /* Resources */,
 				434B1B5B2457FA1000B351E4 /* Models */,
-				434B1B5A2457EBCF00B351E4 /* ProgrammingViews */,
+				434B1B862463B10C00B351E4 /* Repositories */,
+				434B1B9324679A4B00B351E4 /* ViewModels */,
+				434B1B9524679A8300B351E4 /* Views */,
+				434B1B73245A889400B351E4 /* Supporting Views */,
+				434B1B5E2457FF0F00B351E4 /* Resources */,
 				43797FF82453E67C00B23CCF /* ContentView.swift */,
 				43797FFA2453E68400B23CCF /* Assets.xcassets */,
 				43797FFF2453E68400B23CCF /* LaunchScreen.storyboard */,
@@ -354,7 +359,6 @@
 				434B1B81245E8FD100B351E4 /* ScheduleFilterListView.swift in Sources */,
 				434B1B6C245A745D00B351E4 /* ProgrammingView.swift in Sources */,
 				434B1B622458000700B351E4 /* Data.swift in Sources */,
-				434B1B8A2463BDFD00B351E4 /* AppDelegate+Injection.swift in Sources */,
 				434B1B53245682D000B351E4 /* WorkoutCardView.swift in Sources */,
 				434B1B642458008400B351E4 /* UserData.swift in Sources */,
 				434B1B7F245D3BC800B351E4 /* ScheduleHeader.swift in Sources */,

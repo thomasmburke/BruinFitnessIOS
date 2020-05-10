@@ -8,13 +8,11 @@
 
 import Foundation
 import Combine
-import Resolver
-//30:00 has code without resolver that has realtime listeners working
+
 class TestListViewModel: ObservableObject {
     
-    @Published var testRepository: TestRepository = Resolver.resolve()
+    @Published var testRepository = TestRepository()
     @Published var testCellViewModels = [TestCellViewModel]()
-    
     private var cancellables = Set<AnyCancellable>()
     
     init() {
@@ -27,5 +25,9 @@ class TestListViewModel: ObservableObject {
             .assign(to: \.testCellViewModels, on: self)
             .store(in: &cancellables)
       }
+    
+    func addTest(test: Test){
+        testRepository.addTest(test)
+    }
     
 }
