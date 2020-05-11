@@ -29,6 +29,10 @@
 		434B1B8D2463C03800B351E4 /* TestListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B8C2463C03800B351E4 /* TestListView.swift */; };
 		434B1B8F2463C07000B351E4 /* TestListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B8E2463C07000B351E4 /* TestListViewModel.swift */; };
 		434B1B912463C0B300B351E4 /* TestCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B902463C0B300B351E4 /* TestCellViewModel.swift */; };
+		434B1B972468ED9400B351E4 /* ScheduleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B962468ED9400B351E4 /* ScheduleRepository.swift */; };
+		434B1B992468F89000B351E4 /* ScheduleCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B982468F89000B351E4 /* ScheduleCellViewModel.swift */; };
+		434B1B9B2468F93D00B351E4 /* ScheduleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B9A2468F93D00B351E4 /* ScheduleListViewModel.swift */; };
+		434B1B9E2468FAD000B351E4 /* ScheduleListFirestoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B9D2468FAD000B351E4 /* ScheduleListFirestoreView.swift */; };
 		43797FF52453E67C00B23CCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43797FF42453E67C00B23CCF /* AppDelegate.swift */; };
 		43797FF72453E67C00B23CCF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43797FF62453E67C00B23CCF /* SceneDelegate.swift */; };
 		43797FF92453E67C00B23CCF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43797FF82453E67C00B23CCF /* ContentView.swift */; };
@@ -62,6 +66,10 @@
 		434B1B8C2463C03800B351E4 /* TestListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestListView.swift; sourceTree = "<group>"; };
 		434B1B8E2463C07000B351E4 /* TestListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestListViewModel.swift; sourceTree = "<group>"; };
 		434B1B902463C0B300B351E4 /* TestCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCellViewModel.swift; sourceTree = "<group>"; };
+		434B1B962468ED9400B351E4 /* ScheduleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleRepository.swift; sourceTree = "<group>"; };
+		434B1B982468F89000B351E4 /* ScheduleCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleCellViewModel.swift; sourceTree = "<group>"; };
+		434B1B9A2468F93D00B351E4 /* ScheduleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleListViewModel.swift; sourceTree = "<group>"; };
+		434B1B9D2468FAD000B351E4 /* ScheduleListFirestoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleListFirestoreView.swift; sourceTree = "<group>"; };
 		43797FF12453E67C00B23CCF /* ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43797FF42453E67C00B23CCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43797FF62453E67C00B23CCF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +129,7 @@
 		434B1B6D245A86FB00B351E4 /* ScheduleViews */ = {
 			isa = PBXGroup;
 			children = (
+				434B1B9C2468FA9E00B351E4 /* Firestore */,
 				434B1B6E245A871A00B351E4 /* ScheduleView.swift */,
 				434B1B78245A8DB900B351E4 /* ScheduleItemView.swift */,
 				434B1B7E245D3BC800B351E4 /* ScheduleHeader.swift */,
@@ -142,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				434B1B872463B12800B351E4 /* TestRepository.swift */,
+				434B1B962468ED9400B351E4 /* ScheduleRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -160,6 +170,8 @@
 			children = (
 				434B1B8E2463C07000B351E4 /* TestListViewModel.swift */,
 				434B1B902463C0B300B351E4 /* TestCellViewModel.swift */,
+				434B1B982468F89000B351E4 /* ScheduleCellViewModel.swift */,
+				434B1B9A2468F93D00B351E4 /* ScheduleListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -172,6 +184,14 @@
 				434B1B6D245A86FB00B351E4 /* ScheduleViews */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		434B1B9C2468FA9E00B351E4 /* Firestore */ = {
+			isa = PBXGroup;
+			children = (
+				434B1B9D2468FAD000B351E4 /* ScheduleListFirestoreView.swift */,
+			);
+			path = Firestore;
 			sourceTree = "<group>";
 		};
 		43797FE82453E67C00B23CCF = {
@@ -362,9 +382,11 @@
 				434B1B53245682D000B351E4 /* WorkoutCardView.swift in Sources */,
 				434B1B642458008400B351E4 /* UserData.swift in Sources */,
 				434B1B7F245D3BC800B351E4 /* ScheduleHeader.swift in Sources */,
+				434B1B992468F89000B351E4 /* ScheduleCellViewModel.swift in Sources */,
 				434B1B79245A8DB900B351E4 /* ScheduleItemView.swift in Sources */,
 				434B1B592457EBB900B351E4 /* HorizontalCalendarView.swift in Sources */,
 				434B1B882463B12800B351E4 /* TestRepository.swift in Sources */,
+				434B1B9E2468FAD000B351E4 /* ScheduleListFirestoreView.swift in Sources */,
 				43797FF52453E67C00B23CCF /* AppDelegate.swift in Sources */,
 				43797FF72453E67C00B23CCF /* SceneDelegate.swift in Sources */,
 				434B1B852463AF8300B351E4 /* Test.swift in Sources */,
@@ -373,8 +395,10 @@
 				434B1B8D2463C03800B351E4 /* TestListView.swift in Sources */,
 				434B1B75245A88AB00B351E4 /* CustomDivider.swift in Sources */,
 				434B1B662458014B00B351E4 /* WorkoutCardList.swift in Sources */,
+				434B1B9B2468F93D00B351E4 /* ScheduleListViewModel.swift in Sources */,
 				434B1B912463C0B300B351E4 /* TestCellViewModel.swift in Sources */,
 				434B1B6F245A871A00B351E4 /* ScheduleView.swift in Sources */,
+				434B1B972468ED9400B351E4 /* ScheduleRepository.swift in Sources */,
 				434B1B77245A8CB300B351E4 /* Schedule.swift in Sources */,
 				434B1B5D2457FA4E00B351E4 /* Workout.swift in Sources */,
 			);
