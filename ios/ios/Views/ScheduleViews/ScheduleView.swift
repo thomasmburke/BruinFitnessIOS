@@ -37,7 +37,8 @@ struct ScheduleView: View {
             Color.black,
             width: 1)
             
-            ScheduleListView()
+            //ScheduleListView()
+            ScheduleListFirestoreView()
         }
         .background(Color("bruinBackgroundColor"))
     }

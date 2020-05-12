@@ -2,10 +2,10 @@
 //  AppDelegate+Injection.swift
 //  ios
 //
-//  Created by Tom Burke on 5/6/20.
+//  Created by Tom Burke on 5/11/20.
 //  Copyright © 2020 Bruin Fitness. All rights reserved.
 //
-/*
+
 import Foundation
 import Resolver
 import FirebaseFirestore
@@ -16,9 +16,11 @@ extension Resolver: ResolverRegistering {
     register { Firestore.firestore().useEmulator() }.scope(application)
     
     // register application components
-    register { FirestoreTestRepository() as TestRepository }.scope(application)
+    //register { ScheduleRepository() as Repository }.scope(application)
+    register { ScheduleRepository() }.scope(application)
   }
 }
+
 
 extension Firestore {
   func useEmulator() -> Firestore {
@@ -35,5 +37,3 @@ extension Firestore {
     return self
   }
 }
-
-*/

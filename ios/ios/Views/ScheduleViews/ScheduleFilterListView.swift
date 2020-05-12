@@ -11,6 +11,7 @@ import SwiftUI
 struct ScheduleFilterListView: View {
     
     @EnvironmentObject private var userData: UserData
+    @ObservedObject var scheduleListVM = ScheduleListViewModel()
     //@State private var workoutTypeExample = "All"
     
     init() {
@@ -38,12 +39,23 @@ struct ScheduleFilterListView: View {
 //        .background(Color("bruinBackgroundColor"))
         
         
+//        Picker("Schedule Filter",
+//               //selection: $workoutTypeExample) {
+//        selection: $userData.scheduleFilter) {
+//            Text("All").tag("All")
+//            ForEach(userData.schedules) { schedule in
+//                Text(schedule.workoutType).tag(schedule.workoutType)
+//            }
+//        }
+//        .pickerStyle(SegmentedPickerStyle())
+//        .background(Color("bruinBackgroundColor"))
+//        .padding(.horizontal)
+        
         Picker("Schedule Filter",
-               //selection: $workoutTypeExample) {
         selection: $userData.scheduleFilter) {
             Text("All").tag("All")
-            ForEach(userData.schedules) { schedule in
-                Text(schedule.workoutType).tag(schedule.workoutType)
+            ForEach(scheduleListVM.scheduleCellViewModels) { scheduleCellVM in
+                Text(scheduleCellVM.schedule.workoutType).tag(scheduleCellVM.schedule.workoutType)
             }
         }
         .pickerStyle(SegmentedPickerStyle())
@@ -56,5 +68,6 @@ struct ScheduleFilterListView: View {
 struct ScheduleFilterListView_Previews: PreviewProvider {
     static var previews: some View {
         ScheduleFilterListView().environmentObject(UserData())
+        //ScheduleFilterListView()
     }
 }

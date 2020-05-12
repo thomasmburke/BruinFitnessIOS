@@ -1,5 +1,6 @@
 Warnings to investigate:
 - TableView warning
+- When clicking the schedule tab for the first time, the listener is added twice. when using schedule filter listener is added 3 times. On app startup the listener is added one
 
 UI nice to haves:
 - fix card closing animation to not jump to top of list item space

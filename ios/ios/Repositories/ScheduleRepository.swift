@@ -7,21 +7,33 @@
 //
 
 import Foundation
+import Resolver
 import FirebaseFirestore
 import FirebaseFirestoreSwift
 
+class BaseRepository {
+  @Published var schedules = [Schedule]()
+}
 
-class ScheduleRepository: ObservableObject {
+protocol Repository: BaseRepository {
+  func addSchedule(_ schedule: Schedule)
+  func removeSchedule(_ schedule: Schedule)
+  func updateSchedule(_ schedule: Schedule)
+}
+
+
+class ScheduleRepository: BaseRepository, Repository, ObservableObject {
     
-    let db = Firestore.firestore()
-    @Published var schedules = [Schedule]()
+    @Injected var db: Firestore
+    //@Published var schedules = [Schedule]()
     private var scheduleListenerRegistration: ListenerRegistration?
     
-    init(){
-        loadData()
+    override init(){
+        super.init()
+        self.loadData()
     }
     
-    func loadData() {
+    private func loadData() {
         if scheduleListenerRegistration != nil {
             scheduleListenerRegistration?.remove()
         }

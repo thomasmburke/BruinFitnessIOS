@@ -9,9 +9,9 @@
 import Foundation
 import Combine
 
+
 class ScheduleCellViewModel: ObservableObject, Identifiable  {
   
-    var scheduleRepository = ScheduleRepository()
     @Published var schedule: Schedule
 
     var id: Int = 0

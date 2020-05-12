@@ -8,10 +8,12 @@
 
 import Foundation
 import Combine
+import Resolver
 
 class ScheduleListViewModel: ObservableObject {
     
-    @Published var scheduleRepository = ScheduleRepository()
+    //@Published var scheduleRepository = ScheduleRepository()
+    @Published var scheduleRepository: ScheduleRepository = Resolver.resolve()
     @Published var scheduleCellViewModels = [ScheduleCellViewModel]()
     private var cancellables = Set<AnyCancellable>()
     
@@ -24,7 +26,7 @@ class ScheduleListViewModel: ObservableObject {
             }
             .assign(to: \.scheduleCellViewModels, on: self)
             .store(in: &cancellables)
-        print(scheduleRepository.schedules)
+        //print(scheduleRepository.schedules)
       }
     
     

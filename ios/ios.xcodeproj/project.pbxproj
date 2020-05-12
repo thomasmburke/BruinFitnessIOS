@@ -33,6 +33,7 @@
 		434B1B992468F89000B351E4 /* ScheduleCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B982468F89000B351E4 /* ScheduleCellViewModel.swift */; };
 		434B1B9B2468F93D00B351E4 /* ScheduleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B9A2468F93D00B351E4 /* ScheduleListViewModel.swift */; };
 		434B1B9E2468FAD000B351E4 /* ScheduleListFirestoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B9D2468FAD000B351E4 /* ScheduleListFirestoreView.swift */; };
+		434B1BA0246A5F6200B351E4 /* AppDelegate+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B9F246A5F6200B351E4 /* AppDelegate+Injection.swift */; };
 		43797FF52453E67C00B23CCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43797FF42453E67C00B23CCF /* AppDelegate.swift */; };
 		43797FF72453E67C00B23CCF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43797FF62453E67C00B23CCF /* SceneDelegate.swift */; };
 		43797FF92453E67C00B23CCF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43797FF82453E67C00B23CCF /* ContentView.swift */; };
@@ -70,6 +71,7 @@
 		434B1B982468F89000B351E4 /* ScheduleCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleCellViewModel.swift; sourceTree = "<group>"; };
 		434B1B9A2468F93D00B351E4 /* ScheduleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleListViewModel.swift; sourceTree = "<group>"; };
 		434B1B9D2468FAD000B351E4 /* ScheduleListFirestoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleListFirestoreView.swift; sourceTree = "<group>"; };
+		434B1B9F246A5F6200B351E4 /* AppDelegate+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Injection.swift"; sourceTree = "<group>"; };
 		43797FF12453E67C00B23CCF /* ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43797FF42453E67C00B23CCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43797FF62453E67C00B23CCF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 			children = (
 				43797FF62453E67C00B23CCF /* SceneDelegate.swift */,
 				43797FF42453E67C00B23CCF /* AppDelegate.swift */,
+				434B1B9F246A5F6200B351E4 /* AppDelegate+Injection.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -384,6 +387,7 @@
 				434B1B7F245D3BC800B351E4 /* ScheduleHeader.swift in Sources */,
 				434B1B992468F89000B351E4 /* ScheduleCellViewModel.swift in Sources */,
 				434B1B79245A8DB900B351E4 /* ScheduleItemView.swift in Sources */,
+				434B1BA0246A5F6200B351E4 /* AppDelegate+Injection.swift in Sources */,
 				434B1B592457EBB900B351E4 /* HorizontalCalendarView.swift in Sources */,
 				434B1B882463B12800B351E4 /* TestRepository.swift in Sources */,
 				434B1B9E2468FAD000B351E4 /* ScheduleListFirestoreView.swift in Sources */,
