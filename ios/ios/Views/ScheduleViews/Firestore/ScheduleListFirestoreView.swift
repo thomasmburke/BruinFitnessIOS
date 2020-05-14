@@ -5,7 +5,7 @@
 //  Created by Tom Burke on 5/10/20.
 //  Copyright © 2020 Bruin Fitness. All rights reserved.
 //
-
+/*
 import SwiftUI
 
 struct ScheduleListFirestoreView: View {
@@ -46,3 +46,4 @@ struct ScheduleListFirestoreView_Previews: PreviewProvider {
     }
 }
 
+*/

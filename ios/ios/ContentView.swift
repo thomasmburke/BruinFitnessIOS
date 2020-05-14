@@ -39,8 +39,7 @@ struct ContentView: View {
                 }
                 .tag(1)
             
-            //TestListView()
-            ScheduleListFirestoreView()
+            TestListView()
             .tabItem {
                 VStack {
                     Image("baseline_schedule_white_24pt")
