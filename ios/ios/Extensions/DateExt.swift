@@ -21,6 +21,16 @@ extension Date{
         return 0
     }
     
+    var dayOfWeek: String {
+         let dayNumber = Calendar.current.component(.weekday, from: self)
+         // day number starts from 1 but array count from 0
+         return daysOfTheWeek[dayNumber - 1]
+    }
+
+    private var daysOfTheWeek: [String] {
+         return  ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+    }
+    
     private static func getComponent(date: Date, format: String) -> String {
            let formatter = DateFormatter()
            formatter.dateFormat = format
@@ -48,6 +58,16 @@ extension Date{
         
         return dates
         
+    }
+    
+    static func getAvailableWorkoutDates() -> [WorkoutDate]{
+        var dates = [WorkoutDate]()
+        print(Date().dayOfWeek)
+        /*
+        let dateComponents = DateComponents(year: thisYear , month: month)
+        let calendar = Calendar.current
+        let date = calendar.date(from: dateComponents)!*/
+        return dates
     }
 }
 
