@@ -9,13 +9,32 @@
 import SwiftUI
 
 struct HorizontalCalendarView: View {
+    
+    @State private var selectedDate: WorkoutDate = WorkoutDate.default
+    private let dates = Date.getFollowingThirtyDays()
+    
+    @Binding var date: WorkoutDate
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+       VStack(alignment: .leading) {
+           Text("Date")
+               .font(.headline).padding(.leading)
+            ScrollView(.horizontal, showsIndicators: false) {
+               HStack{
+                   ForEach(dates, id: \.day){ date in
+                       DateView(date: date, isSelected: self.selectedDate.day == date.day, onSelect: { selectedDate in
+                           self.selectedDate = selectedDate
+                           self.date = selectedDate
+                       })
+                   }
+               }.padding(.horizontal)
+           }
+       }
     }
 }
 
 struct HorizontalCalendarView_Previews: PreviewProvider {
     static var previews: some View {
-        HorizontalCalendarView()
+        HorizontalCalendarView(date: .constant(WorkoutDate.default))
     }
 }

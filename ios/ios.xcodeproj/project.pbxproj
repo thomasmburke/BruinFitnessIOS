@@ -33,6 +33,9 @@
 		434B1B992468F89000B351E4 /* ScheduleCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B982468F89000B351E4 /* ScheduleCellViewModel.swift */; };
 		434B1B9B2468F93D00B351E4 /* ScheduleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B9A2468F93D00B351E4 /* ScheduleListViewModel.swift */; };
 		434B1BA0246A5F6200B351E4 /* AppDelegate+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B9F246A5F6200B351E4 /* AppDelegate+Injection.swift */; };
+		434B1BA3246CFB5300B351E4 /* DateExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1BA2246CFB5300B351E4 /* DateExt.swift */; };
+		434B1BA5246CFDCA00B351E4 /* WorkoutDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1BA4246CFDCA00B351E4 /* WorkoutDate.swift */; };
+		434B1BA7246D0FD400B351E4 /* DateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1BA6246D0FD400B351E4 /* DateView.swift */; };
 		43797FF52453E67C00B23CCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43797FF42453E67C00B23CCF /* AppDelegate.swift */; };
 		43797FF72453E67C00B23CCF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43797FF62453E67C00B23CCF /* SceneDelegate.swift */; };
 		43797FF92453E67C00B23CCF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43797FF82453E67C00B23CCF /* ContentView.swift */; };
@@ -70,6 +73,9 @@
 		434B1B982468F89000B351E4 /* ScheduleCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleCellViewModel.swift; sourceTree = "<group>"; };
 		434B1B9A2468F93D00B351E4 /* ScheduleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleListViewModel.swift; sourceTree = "<group>"; };
 		434B1B9F246A5F6200B351E4 /* AppDelegate+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Injection.swift"; sourceTree = "<group>"; };
+		434B1BA2246CFB5300B351E4 /* DateExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExt.swift; sourceTree = "<group>"; };
+		434B1BA4246CFDCA00B351E4 /* WorkoutDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDate.swift; sourceTree = "<group>"; };
+		434B1BA6246D0FD400B351E4 /* DateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateView.swift; sourceTree = "<group>"; };
 		43797FF12453E67C00B23CCF /* ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43797FF42453E67C00B23CCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43797FF62453E67C00B23CCF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				434B1B582457EBB900B351E4 /* HorizontalCalendarView.swift */,
+				434B1BA6246D0FD400B351E4 /* DateView.swift */,
 				434B1B52245682D000B351E4 /* WorkoutCardView.swift */,
 				434B1B6B245A745D00B351E4 /* ProgrammingView.swift */,
 				434B1B652458014B00B351E4 /* WorkoutCardList.swift */,
@@ -113,6 +120,7 @@
 				434B1B842463AF8300B351E4 /* Test.swift */,
 				434B1B632458008400B351E4 /* UserData.swift */,
 				434B1B76245A8CB300B351E4 /* Schedule.swift */,
+				434B1BA4246CFDCA00B351E4 /* WorkoutDate.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -186,6 +194,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		434B1BA1246CFB2600B351E4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				434B1BA2246CFB5300B351E4 /* DateExt.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		43797FE82453E67C00B23CCF = {
 			isa = PBXGroup;
 			children = (
@@ -212,6 +228,7 @@
 				434B1B862463B10C00B351E4 /* Repositories */,
 				434B1B9324679A4B00B351E4 /* ViewModels */,
 				434B1B9524679A8300B351E4 /* Views */,
+				434B1BA1246CFB2600B351E4 /* Extensions */,
 				434B1B73245A889400B351E4 /* Supporting Views */,
 				434B1B5E2457FF0F00B351E4 /* Resources */,
 				43797FF82453E67C00B23CCF /* ContentView.swift */,
@@ -372,9 +389,12 @@
 				434B1B6C245A745D00B351E4 /* ProgrammingView.swift in Sources */,
 				434B1B622458000700B351E4 /* Data.swift in Sources */,
 				434B1B53245682D000B351E4 /* WorkoutCardView.swift in Sources */,
+				434B1BA5246CFDCA00B351E4 /* WorkoutDate.swift in Sources */,
 				434B1B642458008400B351E4 /* UserData.swift in Sources */,
 				434B1B7F245D3BC800B351E4 /* ScheduleHeader.swift in Sources */,
 				434B1B992468F89000B351E4 /* ScheduleCellViewModel.swift in Sources */,
+				434B1BA7246D0FD400B351E4 /* DateView.swift in Sources */,
+				434B1BA3246CFB5300B351E4 /* DateExt.swift in Sources */,
 				434B1B79245A8DB900B351E4 /* ScheduleItemView.swift in Sources */,
 				434B1BA0246A5F6200B351E4 /* AppDelegate+Injection.swift in Sources */,
 				434B1B592457EBB900B351E4 /* HorizontalCalendarView.swift in Sources */,
