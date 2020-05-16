@@ -11,7 +11,8 @@ import SwiftUI
 struct HorizontalCalendarView: View {
     
     @State private var selectedDate: WorkoutDate = WorkoutDate.default
-    private let dates = Date.getFollowingThirtyDays()
+    //private let dates = Date.getFollowingThirtyDays()
+    private let dates = Date.getAvailableWorkoutDates()
     
     @Binding var date: WorkoutDate
     

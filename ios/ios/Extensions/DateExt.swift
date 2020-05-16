@@ -60,14 +60,83 @@ extension Date{
         
     }
     
+    static func -(lhs: Date, rhs: Int) -> Date {
+        return Calendar.current.date(byAdding: .day, value: -rhs, to: lhs)!
+    }
+    
     static func getAvailableWorkoutDates() -> [WorkoutDate]{
         var dates = [WorkoutDate]()
+        
         print(Date().dayOfWeek)
-        /*
-        let dateComponents = DateComponents(year: thisYear , month: month)
+        var calendarConfig = [String : Int]()
+        
+        switch Date().dayOfWeek {
+            case "Sun":
+                calendarConfig["futureDaysCount"] = 7;
+                calendarConfig["pastDaysCount"] = 7;
+                calendarConfig["initialIndexPosition"] = 5;
+                calendarConfig["select"] = 7;
+                //break;
+            case "Mon":
+                calendarConfig["futureDaysCount"] = 6;
+                calendarConfig["pastDaysCount"] = 8;
+                calendarConfig["initialIndexPosition"] = 6;
+                calendarConfig["select"] = 8;
+                //break;
+            case "Tue":
+                calendarConfig["futureDaysCount"] = 5;
+                calendarConfig["pastDaysCount"] = 9;
+                calendarConfig["initialIndexPosition"] = 7;
+                calendarConfig["select"] = 9;
+                //break;
+            case "Wed":
+                calendarConfig["futureDaysCount"] = 4;
+                calendarConfig["pastDaysCount"] = 10;
+                calendarConfig["initialIndexPosition"] = 8;
+                calendarConfig["select"] = 10;
+                //break;
+            case "Thu":
+                calendarConfig["futureDaysCount"] = 3;
+                calendarConfig["pastDaysCount"] = 11;
+                calendarConfig["initialIndexPosition"] = 9;
+                calendarConfig["select"] = 11;
+                //break;
+            case "Fri":
+                calendarConfig["futureDaysCount"] = 2;
+                calendarConfig["pastDaysCount"] = 12;
+                calendarConfig["initialIndexPosition"] = 10;
+                calendarConfig["select"] = 12;
+                //break;
+            case "Sat":
+                calendarConfig["futureDaysCount"] = 1;
+                calendarConfig["pastDaysCount"] = 13;
+                calendarConfig["initialIndexPosition"] = 11;
+                calendarConfig["select"] = 13;
+                //break;
+            default :
+                print("invalid day of the week");
+        }
+        
+        let today = Date()
+        let startDate = today - calendarConfig["pastDaysCount"]!
+        let dateComponents = DateComponents(year: thisYear , month: 1)
         let calendar = Calendar.current
-        let date = calendar.date(from: dateComponents)!*/
+        let date = calendar.date(from: dateComponents)!
+        
+        //let range = calendar.range(of: .day, in: .month, for: date)!
+        let range = 0 ... 14
+        
+        for i in range{
+            guard let fullDate = calendar.date(byAdding: DateComponents(day: i) , to: startDate) else { continue }
+            let d = getComponent(date: fullDate, format: "dd")
+            let m = getComponent(date: fullDate, format: "MM")
+            let y = getComponent(date: fullDate, format: "yy")
+            let workoutDate = WorkoutDate(day: d, month: m, year: y)
+            dates.append(workoutDate)
+        }
         return dates
     }
 }
+
+
 

@@ -15,6 +15,8 @@ struct ContentView: View {
     init() {
         UITabBar.appearance().barTintColor = UIColor(named: "bruinBackgroundColor")
         UITabBar.appearance().isTranslucent = false
+        print(Date().dayOfWeek)
+        print(Date.getAvailableWorkoutDates())
     }
         
     @State private var selection = 0
@@ -39,7 +41,8 @@ struct ContentView: View {
                 }
                 .tag(1)
             
-            TestListView()
+            //TestListView()
+            HorizontalCalendarView(date: .constant(WorkoutDate.default))
             .tabItem {
                 VStack {
                     Image("baseline_schedule_white_24pt")
