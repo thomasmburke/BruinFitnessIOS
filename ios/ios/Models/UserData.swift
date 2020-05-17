@@ -16,4 +16,9 @@ final class UserData: ObservableObject {
     // ScheduleFilterListView modifies this state variable
     // ScheduleListView listens and diplays corresponding schedules
     @Published var scheduleFilter = "All"
+    //let dates = Date.getAvailableWorkoutDates()
+    //init() {
+    //    @Published var selectedDate: WorkoutDate = self.dates[Date.calendarConfig["select"]!]
+    //}
+    
 }

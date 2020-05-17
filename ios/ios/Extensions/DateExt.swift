@@ -64,11 +64,62 @@ extension Date{
         return Calendar.current.date(byAdding: .day, value: -rhs, to: lhs)!
     }
     
+    static var calendarConfig: [String : Int] {
+        var config = [String : Int]()
+         switch Date().dayOfWeek {
+             case "Sun":
+                 config["futureDaysCount"] = 7;
+                 config["pastDaysCount"] = 7;
+                 config["initialIndexPosition"] = 5;
+                 config["select"] = 7;
+                 //break;
+             case "Mon":
+                 config["futureDaysCount"] = 6;
+                 config["pastDaysCount"] = 8;
+                 config["initialIndexPosition"] = 6;
+                 config["select"] = 8;
+                 //break;
+             case "Tue":
+                 config["futureDaysCount"] = 5;
+                 config["pastDaysCount"] = 9;
+                 config["initialIndexPosition"] = 7;
+                 config["select"] = 9;
+                 //break;
+             case "Wed":
+                 config["futureDaysCount"] = 4;
+                 config["pastDaysCount"] = 10;
+                 config["initialIndexPosition"] = 8;
+                 config["select"] = 10;
+                 //break;
+             case "Thu":
+                 config["futureDaysCount"] = 3;
+                 config["pastDaysCount"] = 11;
+                 config["initialIndexPosition"] = 9;
+                 config["select"] = 11;
+                 //break;
+             case "Fri":
+                 config["futureDaysCount"] = 2;
+                 config["pastDaysCount"] = 12;
+                 config["initialIndexPosition"] = 10;
+                 config["select"] = 12;
+                 //break;
+             case "Sat":
+                 config["futureDaysCount"] = 1;
+                 config["pastDaysCount"] = 13;
+                 config["initialIndexPosition"] = 11;
+                 config["select"] = 13;
+                 //break;
+             default :
+                 print("invalid day of the week");
+         }
+        return config
+    }
+    
     static func getAvailableWorkoutDates() -> [WorkoutDate]{
         var dates = [WorkoutDate]()
         
         print(Date().dayOfWeek)
-        var calendarConfig = [String : Int]()
+        /*var calendarConfig = [String : Int]()
         
         switch Date().dayOfWeek {
             case "Sun":
@@ -115,13 +166,14 @@ extension Date{
                 //break;
             default :
                 print("invalid day of the week");
-        }
+        }*/
         
         let today = Date()
-        let startDate = today - calendarConfig["pastDaysCount"]!
+        let startDate = today - Date.calendarConfig["pastDaysCount"]!
+        //let startDate = today - calendarConfig["pastDaysCount"]!
         let dateComponents = DateComponents(year: thisYear , month: 1)
         let calendar = Calendar.current
-        let date = calendar.date(from: dateComponents)!
+        //let date = calendar.date(from: dateComponents)!
         
         //let range = calendar.range(of: .day, in: .month, for: date)!
         let range = 0 ... 14
