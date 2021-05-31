@@ -10,7 +10,6 @@
 		434B1B53245682D000B351E4 /* WorkoutCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B52245682D000B351E4 /* WorkoutCardView.swift */; };
 		434B1B592457EBB900B351E4 /* HorizontalCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B582457EBB900B351E4 /* HorizontalCalendarView.swift */; };
 		434B1B5D2457FA4E00B351E4 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B5C2457FA4E00B351E4 /* Workout.swift */; };
-		434B1B602457FF4500B351E4 /* workoutData.json in Resources */ = {isa = PBXBuildFile; fileRef = 434B1B5F2457FF4500B351E4 /* workoutData.json */; };
 		434B1B622458000700B351E4 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B612458000700B351E4 /* Data.swift */; };
 		434B1B642458008400B351E4 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B632458008400B351E4 /* UserData.swift */; };
 		434B1B662458014B00B351E4 /* WorkoutCardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B652458014B00B351E4 /* WorkoutCardList.swift */; };
@@ -19,11 +18,9 @@
 		434B1B75245A88AB00B351E4 /* CustomDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B74245A88AB00B351E4 /* CustomDivider.swift */; };
 		434B1B77245A8CB300B351E4 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B76245A8CB300B351E4 /* Schedule.swift */; };
 		434B1B79245A8DB900B351E4 /* ScheduleItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B78245A8DB900B351E4 /* ScheduleItemView.swift */; };
-		434B1B7B245A8FBD00B351E4 /* scheduleData.json in Resources */ = {isa = PBXBuildFile; fileRef = 434B1B7A245A8FBD00B351E4 /* scheduleData.json */; };
 		434B1B7D245A9B8B00B351E4 /* ScheduleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B7C245A9B8B00B351E4 /* ScheduleListView.swift */; };
 		434B1B7F245D3BC800B351E4 /* ScheduleHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B7E245D3BC800B351E4 /* ScheduleHeader.swift */; };
 		434B1B81245E8FD100B351E4 /* ScheduleFilterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B80245E8FD100B351E4 /* ScheduleFilterListView.swift */; };
-		434B1B832460D98F00B351E4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 434B1B822460D98E00B351E4 /* GoogleService-Info.plist */; };
 		434B1B852463AF8300B351E4 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B842463AF8300B351E4 /* Test.swift */; };
 		434B1B882463B12800B351E4 /* TestRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B872463B12800B351E4 /* TestRepository.swift */; };
 		434B1B8D2463C03800B351E4 /* TestListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B1B8C2463C03800B351E4 /* TestListView.swift */; };
@@ -42,6 +39,9 @@
 		43797FFB2453E68400B23CCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43797FFA2453E68400B23CCF /* Assets.xcassets */; };
 		43797FFE2453E68400B23CCF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43797FFD2453E68400B23CCF /* Preview Assets.xcassets */; };
 		437980012453E68400B23CCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43797FFF2453E68400B23CCF /* LaunchScreen.storyboard */; };
+		A3A6D14426642F6500A3B751 /* scheduleData.json in Resources */ = {isa = PBXBuildFile; fileRef = A3A6D14326642F6500A3B751 /* scheduleData.json */; };
+		A3A6D14626642F6C00A3B751 /* workoutData.json in Resources */ = {isa = PBXBuildFile; fileRef = A3A6D14526642F6C00A3B751 /* workoutData.json */; };
+		A3A6D14826642FC800A3B751 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3A6D14726642FC800A3B751 /* GoogleService-Info.plist */; };
 		DC16D4632839E1387E77D982 /* Pods_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E625D8E8ECD74E1BECB3D321 /* Pods_ios.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,7 +50,6 @@
 		434B1B52245682D000B351E4 /* WorkoutCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCardView.swift; sourceTree = "<group>"; };
 		434B1B582457EBB900B351E4 /* HorizontalCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalCalendarView.swift; sourceTree = "<group>"; };
 		434B1B5C2457FA4E00B351E4 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
-		434B1B5F2457FF4500B351E4 /* workoutData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = workoutData.json; path = /Users/tburke/Desktop/repos/BruinFitnessIOS/ios/ios/Resources/../../../../../workoutData.json; sourceTree = "<absolute>"; };
 		434B1B612458000700B351E4 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		434B1B632458008400B351E4 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		434B1B652458014B00B351E4 /* WorkoutCardList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCardList.swift; sourceTree = "<group>"; };
@@ -59,11 +58,9 @@
 		434B1B74245A88AB00B351E4 /* CustomDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDivider.swift; sourceTree = "<group>"; };
 		434B1B76245A8CB300B351E4 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 		434B1B78245A8DB900B351E4 /* ScheduleItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleItemView.swift; sourceTree = "<group>"; };
-		434B1B7A245A8FBD00B351E4 /* scheduleData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = scheduleData.json; path = ../../../../../scheduleData.json; sourceTree = "<group>"; };
 		434B1B7C245A9B8B00B351E4 /* ScheduleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleListView.swift; sourceTree = "<group>"; };
 		434B1B7E245D3BC800B351E4 /* ScheduleHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleHeader.swift; sourceTree = "<group>"; };
 		434B1B80245E8FD100B351E4 /* ScheduleFilterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleFilterListView.swift; sourceTree = "<group>"; };
-		434B1B822460D98E00B351E4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		434B1B842463AF8300B351E4 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		434B1B872463B12800B351E4 /* TestRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRepository.swift; sourceTree = "<group>"; };
 		434B1B8C2463C03800B351E4 /* TestListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestListView.swift; sourceTree = "<group>"; };
@@ -84,6 +81,9 @@
 		43797FFD2453E68400B23CCF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		437980002453E68400B23CCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		437980022453E68400B23CCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3A6D14326642F6500A3B751 /* scheduleData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = scheduleData.json; path = ../../../../../../Downloads/scheduleData.json; sourceTree = "<group>"; };
+		A3A6D14526642F6C00A3B751 /* workoutData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = workoutData.json; path = ../../../../../../Downloads/workoutData.json; sourceTree = "<group>"; };
+		A3A6D14726642FC800A3B751 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		E625D8E8ECD74E1BECB3D321 /* Pods_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6B6010C6312A2C2E3035397 /* Pods-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios.release.xcconfig"; path = "Target Support Files/Pods-ios/Pods-ios.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,8 +128,8 @@
 		434B1B5E2457FF0F00B351E4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				434B1B7A245A8FBD00B351E4 /* scheduleData.json */,
-				434B1B5F2457FF4500B351E4 /* workoutData.json */,
+				A3A6D14526642F6C00A3B751 /* workoutData.json */,
+				A3A6D14326642F6500A3B751 /* scheduleData.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -234,8 +234,8 @@
 				43797FF82453E67C00B23CCF /* ContentView.swift */,
 				43797FFA2453E68400B23CCF /* Assets.xcassets */,
 				43797FFF2453E68400B23CCF /* LaunchScreen.storyboard */,
+				A3A6D14726642FC800A3B751 /* GoogleService-Info.plist */,
 				437980022453E68400B23CCF /* Info.plist */,
-				434B1B822460D98E00B351E4 /* GoogleService-Info.plist */,
 				43797FFC2453E68400B23CCF /* Preview Content */,
 			);
 			path = ios;
@@ -326,12 +326,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3A6D14426642F6500A3B751 /* scheduleData.json in Resources */,
+				A3A6D14626642F6C00A3B751 /* workoutData.json in Resources */,
 				437980012453E68400B23CCF /* LaunchScreen.storyboard in Resources */,
-				434B1B602457FF4500B351E4 /* workoutData.json in Resources */,
 				43797FFE2453E68400B23CCF /* Preview Assets.xcassets in Resources */,
 				43797FFB2453E68400B23CCF /* Assets.xcassets in Resources */,
-				434B1B7B245A8FBD00B351E4 /* scheduleData.json in Resources */,
-				434B1B832460D98F00B351E4 /* GoogleService-Info.plist in Resources */,
+				A3A6D14826642FC800A3B751 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
