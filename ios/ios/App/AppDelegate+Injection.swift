@@ -13,11 +13,11 @@ import FirebaseFirestore
 extension Resolver: ResolverRegistering {
   public static func registerAllServices() {
     // register Firebase services
-    register { Firestore.firestore().useEmulator() }.scope(application)
+    register { Firestore.firestore().useEmulator() }.scope(.application)
     
     // register application components
     //register { ScheduleRepository() as Repository }.scope(application)
-    register { ScheduleRepository() }.scope(application)
+    register { ScheduleRepository() }.scope(.application)
   }
 }
 
