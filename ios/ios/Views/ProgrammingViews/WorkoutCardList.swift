@@ -27,6 +27,8 @@ struct WorkoutCardList: View {
                 
                 //.animation(.easeInOut(duration: 1.5))
             }
+            // background color surrounding list items
+            .listRowBackground(Color("bruinBackgroundColor"))
             // Make each of the cards wider
             //.listRowInsets(EdgeInsets())
         }
@@ -35,8 +37,6 @@ struct WorkoutCardList: View {
         // other animations overlap the below row item
         //.animation(nil)
         .animation(.easeInOut(duration: 0.05))
-        // background color surrounding list items
-        .listRowBackground(Color("bruinBackgroundColor"))
         // background color of entire view list
         .background(Color("bruinBackgroundColor"))
         // ensures the list item doesn't flash white when clicked
