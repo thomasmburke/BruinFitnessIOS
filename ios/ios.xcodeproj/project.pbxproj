@@ -42,6 +42,7 @@
 		A3A6D14426642F6500A3B751 /* scheduleData.json in Resources */ = {isa = PBXBuildFile; fileRef = A3A6D14326642F6500A3B751 /* scheduleData.json */; };
 		A3A6D14626642F6C00A3B751 /* workoutData.json in Resources */ = {isa = PBXBuildFile; fileRef = A3A6D14526642F6C00A3B751 /* workoutData.json */; };
 		A3A6D14826642FC800A3B751 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3A6D14726642FC800A3B751 /* GoogleService-Info.plist */; };
+		A3A6D14A26649D3A00A3B751 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A6D14926649D3A00A3B751 /* HostingController.swift */; };
 		DC16D4632839E1387E77D982 /* Pods_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E625D8E8ECD74E1BECB3D321 /* Pods_ios.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +85,7 @@
 		A3A6D14326642F6500A3B751 /* scheduleData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = scheduleData.json; path = ../../../../../../Downloads/scheduleData.json; sourceTree = "<group>"; };
 		A3A6D14526642F6C00A3B751 /* workoutData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = workoutData.json; path = ../../../../../../Downloads/workoutData.json; sourceTree = "<group>"; };
 		A3A6D14726642FC800A3B751 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		A3A6D14926649D3A00A3B751 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
 		E625D8E8ECD74E1BECB3D321 /* Pods_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6B6010C6312A2C2E3035397 /* Pods-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios.release.xcconfig"; path = "Target Support Files/Pods-ios/Pods-ios.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -169,6 +171,7 @@
 				43797FF62453E67C00B23CCF /* SceneDelegate.swift */,
 				43797FF42453E67C00B23CCF /* AppDelegate.swift */,
 				434B1B9F246A5F6200B351E4 /* AppDelegate+Injection.swift */,
+				A3A6D14926649D3A00A3B751 /* HostingController.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -413,6 +416,7 @@
 				434B1B972468ED9400B351E4 /* ScheduleRepository.swift in Sources */,
 				434B1B77245A8CB300B351E4 /* Schedule.swift in Sources */,
 				434B1B5D2457FA4E00B351E4 /* Workout.swift in Sources */,
+				A3A6D14A26649D3A00A3B751 /* HostingController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -24,14 +24,15 @@ struct ContentView: View {
  
     var body: some View {
         TabView(selection: $selection){
-            ProgrammingView()
-                .tabItem {
-                    VStack {
-                        Image("baseline_fitness_center_white_24pt")
-                        Text("Programming")
+                ProgrammingView()
+                    .tabItem {
+                        VStack {
+                            Image("baseline_fitness_center_white_24pt")
+                            Text("Programming")
+                        }
                     }
-                }
-                .tag(0)
+                    .tag(0)
+            
             ScheduleView()
                 .tabItem {
                     VStack {
@@ -53,7 +54,6 @@ struct ContentView: View {
         
         }
         .accentColor(Color("bruinGreenColor"))
-    
     }
 }
 
