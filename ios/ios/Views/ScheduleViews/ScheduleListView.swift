@@ -28,13 +28,13 @@ struct ScheduleListView: View {
                     ){
                         ForEach(scheduleCellVM.schedule.scheduleTimes, id: \.self){ scheduleTime in
                             ScheduleItemView(scheduleTime: scheduleTime)
-                        }
+                        }.listRowBackground(Color("bruinBackgroundColor"))
                     }
                 }
             }
         }
         // background color surrounding list items
-        .listRowBackground(Color("bruinBackgroundColor"))
+//        .listRowBackground(Color("bruinBackgroundColor"))
         // background color of entire view list
         .background(Color("bruinBackgroundColor"))
     }

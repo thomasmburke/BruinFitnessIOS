@@ -37,7 +37,7 @@ class ScheduleRepository: BaseRepository, Repository, ObservableObject {
         if scheduleListenerRegistration != nil {
             scheduleListenerRegistration?.remove()
         }
-        scheduleListenerRegistration = db.collection("schedules").document("San Leandro").collection("schedule")
+        scheduleListenerRegistration = db.collection("schedules").document("Redwood City").collection("schedule")
         //.whereField("userId", isEqualTo: self.userId)
         //.order(by: "createdTime")
         .addSnapshotListener { (querySnapshot, error) in
