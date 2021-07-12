@@ -18,6 +18,7 @@ struct ProgrammingView: View {
             
             // Add HorizontalCalendarView here
             
+            
             HStack{
                 Text("Bruin Programming")
                     .font(.title)
@@ -36,6 +37,8 @@ struct ProgrammingView: View {
             
             // Using Custom Divider to get horizontal padding
             CustomDivider(color: Color("bruinGreenColor"), width: 2)
+            
+            WorkoutDatePicker()
             
             WorkoutCardList()
         }
