@@ -23,6 +23,14 @@ struct WorkoutDatePicker: View {
                    displayedComponents: [.date])
             .labelsHidden()
             .accentColor(Color("bruinGreenColor"))
+            .background(Color("bruinBackgroundColor"))
+            .clipShape(Capsule())
+            // Card border
+            .overlay(
+                RoundedRectangle(cornerRadius: 20)
+                    .stroke(Color("workoutCardBorderColor"), lineWidth: 4)
+            )
+//            .cornerRadius(25)
         // Text in the date picker box is sometimes switches between 5/7/2021 format and Jun 7, 2021 format..
 //            .datePickerStyle(GraphicalDatePickerStyle())
     }
