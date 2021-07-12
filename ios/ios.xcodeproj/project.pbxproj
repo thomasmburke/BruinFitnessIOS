@@ -44,6 +44,9 @@
 		A3A6D14826642FC800A3B751 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3A6D14726642FC800A3B751 /* GoogleService-Info.plist */; };
 		A3A6D14A26649D3A00A3B751 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A6D14926649D3A00A3B751 /* HostingController.swift */; };
 		A3A6D14C266F2D9200A3B751 /* WorkoutDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A6D14B266F2D9200A3B751 /* WorkoutDatePicker.swift */; };
+		A3B8B578267FC98C00BF6266 /* Workouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B8B577267FC98C00BF6266 /* Workouts.swift */; };
+		A3B8B57A267FCAD500BF6266 /* WorkoutsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B8B579267FCAD500BF6266 /* WorkoutsViewModel.swift */; };
+		A3B8B57C267FE3A100BF6266 /* DeleteMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B8B57B267FE3A100BF6266 /* DeleteMe.swift */; };
 		DC16D4632839E1387E77D982 /* Pods_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E625D8E8ECD74E1BECB3D321 /* Pods_ios.framework */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +91,9 @@
 		A3A6D14726642FC800A3B751 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		A3A6D14926649D3A00A3B751 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
 		A3A6D14B266F2D9200A3B751 /* WorkoutDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDatePicker.swift; sourceTree = "<group>"; };
+		A3B8B577267FC98C00BF6266 /* Workouts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workouts.swift; sourceTree = "<group>"; };
+		A3B8B579267FCAD500BF6266 /* WorkoutsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsViewModel.swift; sourceTree = "<group>"; };
+		A3B8B57B267FE3A100BF6266 /* DeleteMe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteMe.swift; sourceTree = "<group>"; };
 		E625D8E8ECD74E1BECB3D321 /* Pods_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6B6010C6312A2C2E3035397 /* Pods-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios.release.xcconfig"; path = "Target Support Files/Pods-ios/Pods-ios.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,6 +119,7 @@
 				434B1B6B245A745D00B351E4 /* ProgrammingView.swift */,
 				434B1B652458014B00B351E4 /* WorkoutCardList.swift */,
 				A3A6D14B266F2D9200A3B751 /* WorkoutDatePicker.swift */,
+				A3B8B57B267FE3A100BF6266 /* DeleteMe.swift */,
 			);
 			path = ProgrammingViews;
 			sourceTree = "<group>";
@@ -126,6 +133,7 @@
 				434B1B632458008400B351E4 /* UserData.swift */,
 				434B1B76245A8CB300B351E4 /* Schedule.swift */,
 				434B1BA4246CFDCA00B351E4 /* WorkoutDate.swift */,
+				A3B8B577267FC98C00BF6266 /* Workouts.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -186,6 +194,7 @@
 				434B1B902463C0B300B351E4 /* TestCellViewModel.swift */,
 				434B1B982468F89000B351E4 /* ScheduleCellViewModel.swift */,
 				434B1B9A2468F93D00B351E4 /* ScheduleListViewModel.swift */,
+				A3B8B579267FCAD500BF6266 /* WorkoutsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -390,6 +399,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3B8B57C267FE3A100BF6266 /* DeleteMe.swift in Sources */,
 				434B1B7D245A9B8B00B351E4 /* ScheduleListView.swift in Sources */,
 				434B1B81245E8FD100B351E4 /* ScheduleFilterListView.swift in Sources */,
 				434B1B6C245A745D00B351E4 /* ProgrammingView.swift in Sources */,
@@ -413,6 +423,8 @@
 				434B1B8D2463C03800B351E4 /* TestListView.swift in Sources */,
 				434B1B75245A88AB00B351E4 /* CustomDivider.swift in Sources */,
 				434B1B662458014B00B351E4 /* WorkoutCardList.swift in Sources */,
+				A3B8B57A267FCAD500BF6266 /* WorkoutsViewModel.swift in Sources */,
+				A3B8B578267FC98C00BF6266 /* Workouts.swift in Sources */,
 				434B1B9B2468F93D00B351E4 /* ScheduleListViewModel.swift in Sources */,
 				434B1B912463C0B300B351E4 /* TestCellViewModel.swift in Sources */,
 				434B1B6F245A871A00B351E4 /* ScheduleView.swift in Sources */,

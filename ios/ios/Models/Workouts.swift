@@ -7,3 +7,26 @@
 //
 
 import Foundation
+import FirebaseFirestoreSwift
+import SwiftUI
+
+struct WorkoutDescription: Codable {
+    var coolDown: String?
+    var skill: String?
+    var strength: String?
+    var warmUp: String?
+    var workout: String
+    var workoutDate: String
+    var workoutType: String
+}
+
+struct Workouts: Codable {
+    @DocumentID var id: String?
+    var Metcon: WorkoutDescription?
+    var Weightlifting: WorkoutDescription?
+    var Mobility: WorkoutDescription?
+}
+
+extension Workouts {
+    static let empty = Workouts(Metcon: nil, Weightlifting: nil, Mobility: nil)
+}

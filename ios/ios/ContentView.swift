@@ -42,8 +42,9 @@ struct ContentView: View {
                 }
                 .tag(1)
             
-            //TestListView()
-            HorizontalCalendarView(date: .constant(WorkoutDate.default))
+//            TestListView()
+            DeleteMe()
+//            HorizontalCalendarView(date: .constant(WorkoutDate.default))
             .tabItem {
                 VStack {
                     Image("baseline_schedule_white_24pt")
